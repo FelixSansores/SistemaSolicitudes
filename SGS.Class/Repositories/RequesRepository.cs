@@ -1,0 +1,48 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using SGS.Class;
+using SGS.Class.Interfaces;
+using SGS.Class.Models;
+
+namespace SGS.Class.Repositories
+{
+    public class RequesRepository : IRequestRepository
+    {
+        private readonly SGSDb _context;
+        public RequesRepository(SGSDb context)
+        {
+            _context = context;
+        }
+        public async Task<List<RequestModel>> GetAllAsync()
+        {
+            return await _context.Requests.ToListAsync();
+        }
+        public async Task<RequestModel?> GetByIdAsync(int id)
+        {
+            return await _context.Requests.FindAsync(id);
+        }
+        public async Task AddAsync(RequestModel request)
+        {
+            await _context.Requests.AddAsync(request);
+            await _context.SaveChangesAsync();
+        }
+        public async Task UpdateAsync(RequestModel request)
+        {
+            _context.Requests.Update(request);
+            await _context.SaveChangesAsync();
+        }
+        public async Task DeleteAsync(int id)
+        {
+            var request = await _context.Requests.FindAsync(id);
+            if (request != null)
+            {
+                _context.Requests.Remove(request);
+                await _context.SaveChangesAsync();
+            }
+        }
+    }
+}

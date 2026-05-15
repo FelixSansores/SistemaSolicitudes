@@ -14,7 +14,7 @@ using System.Threading.Tasks;
     SGSDb IDesignTimeDbContextFactory<SGSDb>.CreateDbContext(string[] args)
     {
         var optionsBuilder = new DbContextOptionsBuilder<SGSDb>();
-        optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=LearnNowDB;Trusted_Connection=True;TrustServerCertificate=True;");
+        optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS;Database=SistemaSolicitudesDB;Trusted_Connection=True;TrustServerCertificate=True;");
 
         return new SGSDb(optionsBuilder.Options);
     }
