@@ -7,7 +7,6 @@ using Microsoft.EntityFrameworkCore;
 using SGS.Class;
 using SGS.Class.Interfaces;
 using SGS.Class.Models;
-
 namespace SGS.Class.Repositories
 {
     public class RequesRepository : IRequestRepository
@@ -21,7 +20,7 @@ namespace SGS.Class.Repositories
         {
             return await _context.Requests.ToListAsync();
         }
-        public async Task<RequestModel?> GetByIdAsync(int id)
+        public async Task<RequestModel?> GetbyIdAsync(int id)
         {
             return await _context.Requests.FindAsync(id);
         }
@@ -30,7 +29,7 @@ namespace SGS.Class.Repositories
             await _context.Requests.AddAsync(request);
             await _context.SaveChangesAsync();
         }
-        public async Task UpdateAsync(RequestModel request)
+        public async Task updateAsync(RequestModel request)
         {
             _context.Requests.Update(request);
             await _context.SaveChangesAsync();
