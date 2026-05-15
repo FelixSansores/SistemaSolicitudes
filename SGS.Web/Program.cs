@@ -1,9 +1,44 @@
+using SGS;
+using SGS.Class;
+using SGS.Class.Models;
+using SGS.Web;  
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddControllers();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddRazorPages();
+
+//Configura DBContext para la base de datos
+builder.Services.AddDbContext<SGSDb>(options => options.UseSqlServer
+(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+
+//Configuraciond e identity
+builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+    .AddEntityFrameworkStores<SGSDb>()
+    .AddDefaultTokenProviders();
+
+//Configuracion de cookies para autenticacion
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = "/Auth/Login";
+    options.AccessDeniedPath = "/Auth/AccesDenied";
+}
+);
+
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    await RoleInitializer.SeedRoleAsync(services);
+}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -16,9 +51,14 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
+app.MapControllers();
 app.UseRouting();
 
-app.UseAuthorization();
+app.UseAuthentication();
+app.UseAuthorization(); 
+
+app.MapDefaultControllerRoute();
+app.MapRazorPages();
 
 app.MapControllerRoute(
     name: "default",
