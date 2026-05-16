@@ -1,0 +1,45 @@
+﻿@model List<SGS.Class.Models.RequestModel>
+
+<h1>Solicitudes</h1>
+<a asp-action="Create" class="btn btn-primary mb-3">
+    Nueva Solicitud
+</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Título</th>
+            <th>Descripción</th>
+            <th>Ubicación</th>
+            <th>Fecha</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Title</td>
+                <td>@item.Description</td>
+                <td>@item.Location</td>
+                <td>@item.CreatedAt</td>
+
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.Id"
+                       class="btn btn-info">
+                        Details
+                    </a>
+
+                    <a asp-action="Edit" asp-route-id="@item.Id"
+                       class="btn btn-warning">
+                        Edit
+                    </a>
+
+                    <a asp-action="Delete" asp-route-id="@item.Id"
+                       class="btn btn-danger">
+                        Delete
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

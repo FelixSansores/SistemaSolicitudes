@@ -1,0 +1,23 @@
+﻿@model SGS.Class.Models.RequestModel
+
+<h1>Eliminar Solicitud</h1>
+
+<h3>¿Deseas eliminar esta solicitud?</h3>
+
+<div>
+    <strong>@Model.Title</strong>
+</div>
+
+<form asp-action="Delete" method="post">
+
+    <input type="hidden" asp-for="Id" />
+
+    <button type="submit" class="btn btn-danger">
+        Eliminar
+    </button>
+
+    <a asp-action="Index" class="btn btn-secondary">
+        Cancelar
+    </a>
+
+</form>

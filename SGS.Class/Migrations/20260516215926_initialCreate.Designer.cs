@@ -12,8 +12,8 @@ using SGS.Class;
 namespace SGS.Class.Migrations
 {
     [DbContext(typeof(SGSDb))]
-    [Migration("20260515011934_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20260516215926_initialCreate")]
+    partial class initialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -255,12 +255,12 @@ namespace SGS.Class.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("RequestModelId")
+                    b.Property<int>("RequestId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("RequestModelId");
+                    b.HasIndex("RequestId");
 
                     b.ToTable("Comments");
                 });
@@ -303,6 +303,12 @@ namespace SGS.Class.Migrations
                     b.Property<string>("Location")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Priority")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -385,12 +391,17 @@ namespace SGS.Class.Migrations
             modelBuilder.Entity("SGS.Class.Models.CommentModel", b =>
                 {
                     b.HasOne("SGS.Class.Models.RequestModel", "Request")
-                        .WithMany()
-                        .HasForeignKey("RequestModelId")
+                        .WithMany("Comments")
+                        .HasForeignKey("RequestId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Request");
+                });
+
+            modelBuilder.Entity("SGS.Class.Models.RequestModel", b =>
+                {
+                    b.Navigation("Comments");
                 });
 #pragma warning restore 612, 618
         }

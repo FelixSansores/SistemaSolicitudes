@@ -17,5 +17,6 @@ namespace SGS.Class.Interfaces
             Task AddAsync(RequestModel request);
             Task updateAsync(RequestModel request);
             Task DeleteAsync(int id);
-        }
+            Task<RequestModel?> GetWithCommentsAsync(int id);
+    }
 }

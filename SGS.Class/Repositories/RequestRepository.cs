@@ -9,10 +9,10 @@ using SGS.Class.Interfaces;
 using SGS.Class.Models;
 namespace SGS.Class.Repositories
 {
-    public class RequesRepository : IRequestRepository
+    public class RequestRepository : IRequestRepository
     {
         private readonly SGSDb _context;
-        public RequesRepository(SGSDb context)
+        public RequestRepository(SGSDb context)
         {
             _context = context;
         }
@@ -42,6 +42,12 @@ namespace SGS.Class.Repositories
                 _context.Requests.Remove(request);
                 await _context.SaveChangesAsync();
             }
+        }
+        public async Task<RequestModel?> GetWithCommentsAsync(int id)
+        {
+            return await _context.Requests
+                .Include(r => r.Comments)
+                .FirstOrDefaultAsync(r => r.Id == id);
         }
     }
 }

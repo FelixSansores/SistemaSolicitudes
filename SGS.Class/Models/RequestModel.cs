@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SGS.Class.Enums;
 
 namespace SGS.Class.Models
 {
@@ -23,5 +24,12 @@ namespace SGS.Class.Models
         public DateTime CreatedAt { get; set; }
 
         public DateTime? ClosedAt { get; set; }
+
+        public RequestStatus Status { get; set; }
+
+        public RequestPriority Priority { get; set; }
+
+        public ICollection<CommentModel> Comments { get; set; }
+    = new List<CommentModel>();
     }
 }

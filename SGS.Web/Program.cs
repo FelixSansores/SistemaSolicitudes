@@ -1,9 +1,12 @@
-using SGS;
-using SGS.Class;
-using SGS.Class.Models;
-using SGS.Web;  
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using SGS;
+using SGS.Class;
+using SGS.Class.Interfaces;
+using SGS.Class.Models;
+using SGS.Class.Repositories;
+using SGS.Class.Services;
+using SGS.Web;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +20,10 @@ builder.Services.AddRazorPages();
 builder.Services.AddDbContext<SGSDb>(options => options.UseSqlServer
 (builder.Configuration.GetConnectionString("DefaultConnection")));
 
+builder.Services.AddScoped<ICommentRepository, CommentRepository>();
+builder.Services.AddScoped<ICommentService, CommentService>();
+builder.Services.AddScoped<IRequestRepository, RequestRepository>();
+builder.Services.AddScoped<IRequestService, RequestService>();
 
 //Configuraciond e identity
 builder.Services.AddIdentity<IdentityUser, IdentityRole>()

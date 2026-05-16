@@ -1,0 +1,26 @@
+﻿@model SGS.Web.Models.RegisterViewModel
+
+<h1>Registro</h1>
+
+<form asp-action="Register" method="post">
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <div class="mb-3">
+        <label>Correo</label>
+        <input asp-for="Email" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Contraseña</label>
+        <input asp-for="Password" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label>Confirmar contraseña</label>
+        <input asp-for="ConfirmPassword" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+        Registrarse
+    </button>
+</form>

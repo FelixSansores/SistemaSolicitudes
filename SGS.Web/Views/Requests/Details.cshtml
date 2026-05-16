@@ -1,0 +1,106 @@
+﻿@model SGS.Class.Models.RequestModel
+
+<h1>Detalle de Solicitud</h1>
+
+<div class="card p-3 mb-4">
+
+    <h3>@Model.Title</h3>
+
+    <p>
+        <strong>Descripción:</strong>
+        @Model.Description
+    </p>
+
+    <p>
+        <strong>Ubicación:</strong>
+        @Model.Location
+    </p>
+
+    <p>
+        <strong>Fecha:</strong>
+        @Model.CreatedAt
+    </p>
+
+    <p>
+        <strong>Estado:</strong>
+        @Model.Status
+    </p>
+
+    <p>
+        <strong>Prioridad:</strong>
+        @Model.Priority
+    </p>
+
+    <p>
+        <strong>Fecha de creación:</strong>
+        @Model.CreatedAt
+    </p>
+
+    <p>
+        <strong>Fecha de cierre:</strong>
+
+        @(Model.ClosedAt.HasValue
+                ? Model.ClosedAt.Value.ToString("g")
+                : "Solicitud abierta")
+    </p>
+</div>
+
+<hr />
+
+<h3>Comentarios</h3>
+
+@if (Model.Comments != null && Model.Comments.Any())
+{
+    foreach (var comment in Model.Comments)
+    {
+        <div class="card p-2 mb-2">
+
+            <p>@comment.Content</p>
+
+            <small>
+                @comment.CreatedAt
+            </small>
+
+        </div>
+    }
+}
+else
+{
+    <p>No hay comentarios.</p>
+}
+
+<hr />
+
+<h3>Agregar comentario</h3>
+
+<form asp-action="AddComment" method="post">
+
+    <input type="hidden"
+           name="RequestId"
+           value="@Model.Id" />
+
+    <div class="mb-3">
+
+        <textarea name="Content"
+                  class="form-control">
+        </textarea>
+
+    </div>
+
+    <button type="submit"
+            class="btn btn-primary">
+
+        Agregar Comentario
+
+    </button>
+
+</form>
+
+<br />
+
+<a asp-action="Index"
+   class="btn btn-secondary">
+
+    Volver
+
+</a>

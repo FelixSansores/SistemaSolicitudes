@@ -16,7 +16,7 @@ namespace SGS.Class.Models
 
         public DateTime CreatedAt { get; set; }
 
-        public int RequestModelId { get; set; }
+        public int RequestId { get; set; }
 
         public RequestModel Request { get; set; }
     }
