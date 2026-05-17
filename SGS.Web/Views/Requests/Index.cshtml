@@ -8,37 +8,67 @@
 
     <div class="col-md-3">
         <label>Estado</label>
-        <select name="status"
-                class="form-control"
-                asp-items="Html.GetEnumSelectList<SGS.Class.Enums.RequestStatus>()">
+        <select name="status" class="form-control">
             <option value="">Todos</option>
+
+            @foreach (var item in Html.GetEnumSelectList<SGS.Class.Enums.RequestStatus>())
+            {
+                <option value="@item.Value" selected="@(ViewBag.SelectedStatus != null && item.Value == ((int)ViewBag.SelectedStatus).ToString())">
+                    @item.Text
+                </option>
+            }
         </select>
     </div>
 
     <div class="col-md-3">
         <label>Prioridad</label>
-        <select name="priority"
-                class="form-control"
-                asp-items="Html.GetEnumSelectList<SGS.Class.Enums.RequestPriority>()">
+        <select name="priority" class="form-control">
             <option value="">Todas</option>
+
+            @foreach (var item in Html.GetEnumSelectList<SGS.Class.Enums.RequestPriority>())
+            {
+                <option value="@item.Value" selected="@(ViewBag.SelectedPriority != null && item.Value == ((int)ViewBag.SelectedPriority).ToString())">
+                    @item.Text
+                </option>
+            }
         </select>
     </div>
 
     <div class="col-md-3">
         <label>Categoría</label>
-        <select name="categoryId"
-                class="form-control"
-                asp-items="ViewBag.Categories">
+        <select name="categoryId" class="form-control">
+
             <option value="">Todas</option>
+
+            @foreach (var item in ViewBag.Categories as SelectList)
+            {
+                <option value="@item.Value"
+                        selected="@(ViewBag.SelectedCategoryId != null && item.Value == ViewBag.SelectedCategoryId.ToString())">
+
+                    @item.Text
+
+                </option>
+            }
+
         </select>
     </div>
 
     <div class="col-md-3">
         <label>Responsable</label>
-        <select name="assignedUserId"
-                class="form-control"
-                asp-items="ViewBag.Technicians">
+        <select name="assignedUserId" class="form-control">
+
             <option value="">Todos</option>
+
+            @foreach (var item in ViewBag.Technicians as SelectList)
+            {
+                <option value="@item.Value"
+                        selected="@(ViewBag.SelectedAssignedUserId != null && item.Value == ViewBag.SelectedAssignedUserId.ToString())">
+
+                    @item.Text
+
+                </option>
+            }
+
         </select>
     </div>
 

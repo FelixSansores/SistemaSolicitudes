@@ -53,6 +53,11 @@ namespace SGS.Web.Controllers
                     categoryId,
                     assignedUserId);
 
+            ViewBag.SelectedStatus = status;
+            ViewBag.SelectedPriority = priority;
+            ViewBag.SelectedCategoryId = categoryId;
+            ViewBag.SelectedAssignedUserId = assignedUserId;
+
             return View(requests);
         }
 
