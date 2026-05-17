@@ -51,7 +51,8 @@ namespace SGS.Web.Controllers
             var user = new ApplicationUser
             {
                 UserName = model.Email,
-                Email = model.Email
+                Email = model.Email,
+                FullName = model.FullName
             };
 
             var result = await _userManager.CreateAsync(user, model.Password);
