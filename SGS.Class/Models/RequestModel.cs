@@ -29,7 +29,11 @@ namespace SGS.Class.Models
 
         public RequestPriority Priority { get; set; }
 
-        public ICollection<CommentModel> Comments { get; set; }
-    = new List<CommentModel>();
+        public int? CategoryId { get; set; }
+
+        public CategoryModel? Category { get; set; }
+
+        public ICollection<CommentModel> Comments { get; set; } = new List<CommentModel>();
+
     }
 }

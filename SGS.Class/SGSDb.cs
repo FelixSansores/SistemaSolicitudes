@@ -34,7 +34,13 @@ namespace SGS.Class
                 .HasOne(c => c.Request)
                 .WithMany(r => r.Comments)
                 .HasForeignKey(c => c.RequestId);
+
+            builder.Entity<RequestModel>()
+                .HasOne(r => r.Category)
+                .WithMany()
+                .HasForeignKey(r => r.CategoryId);
         }
+
 
     }
 }
