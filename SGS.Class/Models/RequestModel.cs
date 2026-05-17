@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Identity;
+using SGS.Class.Enums;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SGS.Class.Enums;
 
 namespace SGS.Class.Models
 {
@@ -35,5 +36,8 @@ namespace SGS.Class.Models
 
         public ICollection<CommentModel> Comments { get; set; } = new List<CommentModel>();
 
+        public string? AssignedUserId { get; set; }
+
+        public IdentityUser? AssignedUser { get; set; }
     }
 }
