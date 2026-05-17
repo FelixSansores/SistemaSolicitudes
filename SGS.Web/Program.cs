@@ -24,6 +24,7 @@ builder.Services.AddScoped<ICommentRepository, CommentRepository>();
 builder.Services.AddScoped<ICommentService, CommentService>();
 builder.Services.AddScoped<IRequestRepository, RequestRepository>();
 builder.Services.AddScoped<IRequestService, RequestService>();
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
 //Configuraciond e identity
 builder.Services.AddIdentity<IdentityUser, IdentityRole>()
