@@ -78,7 +78,7 @@ namespace SGS.Web.Controllers
             }
             ViewBag.Categories = new SelectList(_context.Categories.ToList(), "Id", "Name", request.CategoryId);
             var tecnicos = await _userManager.GetUsersInRoleAsync("Tecnico");
-            ViewBag.Technicians = new SelectList(tecnicos, "Id", "Email", request.AssignedUserId);
+            ViewBag.Technicians = new SelectList(tecnicos, "Id", "FullName", request.AssignedUserId);
             return View(request);
         }
 
@@ -90,7 +90,7 @@ namespace SGS.Web.Controllers
             {
                 ViewBag.Categories = new SelectList(_context.Categories.ToList(), "Id", "Name", request.CategoryId);
                 var tecnicos = await _userManager.GetUsersInRoleAsync("Tecnico");
-                ViewBag.Technicians = new SelectList(tecnicos, "Id", "Email", request.AssignedUserId);
+                ViewBag.Technicians = new SelectList(tecnicos, "Id", "FullName", request.AssignedUserId);
                 return View(request);
             }
 
