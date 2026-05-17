@@ -18,7 +18,9 @@ namespace SGS.Class.Repositories
         }
         public async Task<List<RequestModel>> GetAllAsync()
         {
-            return await _context.Requests.ToListAsync();
+            return await _context.Requests
+                .Include(r => r.Category)
+                .ToListAsync();
         }
         public async Task<RequestModel?> GetbyIdAsync(int id)
         {
@@ -46,6 +48,7 @@ namespace SGS.Class.Repositories
         public async Task<RequestModel?> GetWithCommentsAsync(int id)
         {
             return await _context.Requests
+                .Include(r => r.Category)
                 .Include(r => r.Comments)
                 .FirstOrDefaultAsync(r => r.Id == id);
         }

@@ -12,6 +12,11 @@
     </p>
 
     <p>
+        <strong>Categoría:</strong>
+        @(Model.Category != null ? Model.Category.Name : "Sin categoría")
+    </p>
+
+    <p>
         <strong>Ubicación:</strong>
         @Model.Location
     </p>
