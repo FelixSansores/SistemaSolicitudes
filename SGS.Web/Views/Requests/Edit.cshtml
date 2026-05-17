@@ -36,6 +36,16 @@
     </div>
 
     <div class="mb-3">
+        <label>Responsable</label>
+
+        <select asp-for="AssignedUserId"
+                asp-items="ViewBag.Technicians"
+                class="form-control">
+            <option value="">Sin asignar</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
 
         <label>Estado</label>
 

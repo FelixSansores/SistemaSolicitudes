@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc;
 using SGS.Class.Enums;
 using SGS.Class.Interfaces;
 using SGS.Class.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using SGS.Class;
+using Microsoft.AspNetCore.Identity;
 
 namespace SGS.Web.Controllers
 {
@@ -15,12 +15,15 @@ namespace SGS.Web.Controllers
         private readonly SGSDb _context;
         private readonly IRequestService _service;
         private readonly ICommentService _commentService;
+        private readonly UserManager<IdentityUser> _userManager;
 
-        public RequestsController(IRequestService service, ICommentService commentService, SGSDb context)
+        public RequestsController(IRequestService service, ICommentService commentService, SGSDb context, 
+            UserManager<IdentityUser> userManager)
         {
             _service = service;
             _commentService = commentService;
             _context = context;
+            _userManager = userManager;
         }
         public async Task<IActionResult> Index()
         {
@@ -74,6 +77,8 @@ namespace SGS.Web.Controllers
                 return NotFound();
             }
             ViewBag.Categories = new SelectList(_context.Categories.ToList(), "Id", "Name", request.CategoryId);
+            var tecnicos = await _userManager.GetUsersInRoleAsync("Tecnico");
+            ViewBag.Technicians = new SelectList(tecnicos, "Id", "Email", request.AssignedUserId);
             return View(request);
         }
 
@@ -84,6 +89,8 @@ namespace SGS.Web.Controllers
             if (!ModelState.IsValid)
             {
                 ViewBag.Categories = new SelectList(_context.Categories.ToList(), "Id", "Name", request.CategoryId);
+                var tecnicos = await _userManager.GetUsersInRoleAsync("Tecnico");
+                ViewBag.Technicians = new SelectList(tecnicos, "Id", "Email", request.AssignedUserId);
                 return View(request);
             }
 

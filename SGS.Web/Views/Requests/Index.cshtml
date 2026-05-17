@@ -10,6 +10,7 @@
             <th>Título</th>
             <th>Categoría</th>
             <th>Descripción</th>
+            <th>Responsable</th>
             <th>Ubicación</th>
             <th>Fecha</th>
         </tr>
@@ -22,6 +23,7 @@
                 <td>@item.Title</td>
                 <td>@item.Category?.Name</td>
                 <td>@item.Description</td>
+                <td>@(item.AssignedUser != null ? item.AssignedUser.Email : "Sin asignar")</td>
                 <td>@item.Location</td>
                 <td>@item.CreatedAt</td>
 

@@ -22,6 +22,11 @@
     </p>
 
     <p>
+        <strong>Responsable:</strong>
+        @(Model.AssignedUser != null ? Model.AssignedUser.Email : "Sin asignar")
+    </p>
+
+    <p>
         <strong>Fecha:</strong>
         @Model.CreatedAt
     </p>

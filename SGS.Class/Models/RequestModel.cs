@@ -39,5 +39,6 @@ namespace SGS.Class.Models
         public string? AssignedUserId { get; set; }
 
         public IdentityUser? AssignedUser { get; set; }
+
     }
 }
