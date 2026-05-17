@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using SGS.Class.Models;
 using SGS.Web.Models;
 
 namespace SGS.Web.Controllers
@@ -8,11 +9,11 @@ namespace SGS.Web.Controllers
     [Authorize(Roles = "Admin")]
     public class UserManagementController : Controller
     {
-        private readonly UserManager<IdentityUser> _userManager;
+        private readonly UserManager<ApplicationUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
 
         public UserManagementController(
-            UserManager<IdentityUser> userManager,
+            UserManager<ApplicationUser> userManager,
             RoleManager<IdentityRole> roleManager)
         {
             _userManager = userManager;
@@ -23,7 +24,7 @@ namespace SGS.Web.Controllers
         {
             var users = _userManager.Users.ToList();
 
-            var userList = new List<(IdentityUser User, IList<string> Roles)>();
+            var userList = new List<(ApplicationUser User, IList<string> Roles)>();
 
             foreach (var user in users)
             {
@@ -47,7 +48,7 @@ namespace SGS.Web.Controllers
                 return View(model);
             }
 
-            var user = new IdentityUser
+            var user = new ApplicationUser
             {
                 UserName = model.Email,
                 Email = model.Email

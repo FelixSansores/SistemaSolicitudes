@@ -15,10 +15,10 @@ namespace SGS.Web.Controllers
         private readonly SGSDb _context;
         private readonly IRequestService _service;
         private readonly ICommentService _commentService;
-        private readonly UserManager<IdentityUser> _userManager;
+        private readonly UserManager<ApplicationUser> _userManager;
 
         public RequestsController(IRequestService service, ICommentService commentService, SGSDb context, 
-            UserManager<IdentityUser> userManager)
+            UserManager<ApplicationUser> userManager)
         {
             _service = service;
             _commentService = commentService;

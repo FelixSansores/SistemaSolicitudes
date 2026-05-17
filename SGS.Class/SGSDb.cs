@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace SGS.Class
 {
-    public class SGSDb : IdentityDbContext
+    public class SGSDb : IdentityDbContext<ApplicationUser>
     {
         public SGSDb(DbContextOptions<SGSDb> options)
             : base(options)

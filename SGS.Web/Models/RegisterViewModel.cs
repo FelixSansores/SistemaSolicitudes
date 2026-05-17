@@ -5,6 +5,9 @@ namespace SGS.Web.Models
     public class RegisterViewModel
     {
         [Required]
+        public string FullName { get; set; }
+
+        [Required]
         [EmailAddress]
         public string Email { get; set; }
 

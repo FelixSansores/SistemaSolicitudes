@@ -5,6 +5,9 @@ namespace SGS.Web.Models
     public class CreateUserViewModel
     {
         [Required]
+        public string FullName { get; set; }
+
+        [Required]
         [EmailAddress]
         public string Email { get; set; }
 
@@ -14,5 +17,6 @@ namespace SGS.Web.Models
 
         [Required]
         public string Role { get; set; }
+
     }
 }

@@ -27,7 +27,7 @@ builder.Services.AddScoped<IRequestService, RequestService>();
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
 //Configuraciond e identity
-builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<SGSDb>()
     .AddDefaultTokenProviders();
 

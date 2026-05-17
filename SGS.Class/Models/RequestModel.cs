@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Identity;
-using SGS.Class.Enums;
+﻿using SGS.Class.Enums;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -38,7 +37,7 @@ namespace SGS.Class.Models
 
         public string? AssignedUserId { get; set; }
 
-        public IdentityUser? AssignedUser { get; set; }
+        public ApplicationUser? AssignedUser { get; set; }
 
     }
 }
