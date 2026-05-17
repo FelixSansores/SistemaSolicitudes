@@ -4,6 +4,55 @@
 <a asp-action="Create" class="btn btn-primary mb-3">
     Nueva Solicitud
 </a>
+<form asp-action="Index" method="get" class="row mb-4">
+
+    <div class="col-md-3">
+        <label>Estado</label>
+        <select name="status"
+                class="form-control"
+                asp-items="Html.GetEnumSelectList<SGS.Class.Enums.RequestStatus>()">
+            <option value="">Todos</option>
+        </select>
+    </div>
+
+    <div class="col-md-3">
+        <label>Prioridad</label>
+        <select name="priority"
+                class="form-control"
+                asp-items="Html.GetEnumSelectList<SGS.Class.Enums.RequestPriority>()">
+            <option value="">Todas</option>
+        </select>
+    </div>
+
+    <div class="col-md-3">
+        <label>Categoría</label>
+        <select name="categoryId"
+                class="form-control"
+                asp-items="ViewBag.Categories">
+            <option value="">Todas</option>
+        </select>
+    </div>
+
+    <div class="col-md-3">
+        <label>Responsable</label>
+        <select name="assignedUserId"
+                class="form-control"
+                asp-items="ViewBag.Technicians">
+            <option value="">Todos</option>
+        </select>
+    </div>
+
+    <div class="col-md-12 mt-3">
+        <button type="submit" class="btn btn-primary">
+            Filtrar
+        </button>
+
+        <a asp-action="Index" class="btn btn-secondary">
+            Limpiar
+        </a>
+    </div>
+
+</form>
 <table class="table">
     <thead>
         <tr>

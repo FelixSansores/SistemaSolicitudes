@@ -25,9 +25,33 @@ namespace SGS.Web.Controllers
             _context = context;
             _userManager = userManager;
         }
-        public async Task<IActionResult> Index()
+
+        public async Task<IActionResult> Index(
+            RequestStatus? status,
+            RequestPriority? priority,
+            int? categoryId,
+            string? assignedUserId)
         {
-            var requests = await _service.GetAllAsync();
+            ViewBag.Categories = new SelectList(
+                _context.Categories.ToList(),
+                "Id",
+                "Name");
+
+            var tecnicos =
+                await _userManager.GetUsersInRoleAsync("Tecnico");
+
+            ViewBag.Technicians =
+                new SelectList(
+                    tecnicos,
+                    "Id",
+                    "FullName");
+
+            var requests =
+                await _service.GetFilteredAsync(
+                    status,
+                    priority,
+                    categoryId,
+                    assignedUserId);
 
             return View(requests);
         }
