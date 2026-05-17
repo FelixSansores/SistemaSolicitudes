@@ -5,6 +5,11 @@
 
 <form asp-action="CreateUser" method="post">
     <div asp-validation-summary="All" class="text-danger"></div>
+    
+    <div class="mb-3">
+        <label>Nombre completo</label>
+        <input asp-for="FullName" class="form-control" />
+    </div>
 
     <div class="mb-3">
         <label>Correo</label>
