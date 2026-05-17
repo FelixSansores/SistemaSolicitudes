@@ -60,7 +60,7 @@ namespace SGS.Web.Controllers
 
             return View(request);
         }
-        [Authorize(Roles = "Admin,Tecnico")]
+        [Authorize(Roles = "Admin, Tecnico")]
         public async Task<IActionResult> Edit(int id)
         {
             var request = await _service.GetByIdAsync(id);
@@ -73,7 +73,7 @@ namespace SGS.Web.Controllers
             return View(request);
         }
 
-        [Authorize(Roles = "Admin,Tecnico")]
+        [Authorize(Roles = "Admin, Tecnico")]
         [HttpPost]
         public async Task<IActionResult> Edit(RequestModel request)
         {
@@ -118,12 +118,16 @@ namespace SGS.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> AddComment(CommentModel comment)
         {
+            if (string.IsNullOrWhiteSpace(comment.Content))
+            {
+                return RedirectToAction(nameof(Details), new { id = comment.RequestId });
+            }
+
             comment.CreatedAt = DateTime.Now;
 
             await _commentService.CreateAsync(comment);
 
-            return RedirectToAction(nameof(Details),
-                new { id = comment.RequestId });
+            return RedirectToAction(nameof(Details), new { id = comment.RequestId });
         }
 
     }
