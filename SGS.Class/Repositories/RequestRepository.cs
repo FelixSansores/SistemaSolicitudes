@@ -1,12 +1,13 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using SGS.Class;
+using SGS.Class.Enums;
+using SGS.Class.Interfaces;
+using SGS.Class.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using SGS.Class;
-using SGS.Class.Interfaces;
-using SGS.Class.Models;
 namespace SGS.Class.Repositories
 {
     public class RequestRepository : IRequestRepository
@@ -53,6 +54,31 @@ namespace SGS.Class.Repositories
                 .Include(r => r.AssignedUser)
                 .Include(r => r.Comments)
                 .FirstOrDefaultAsync(r => r.Id == id);
+        }
+
+        public async Task<List<RequestModel>> GetFilteredAsync(RequestStatus? status,
+            RequestPriority? priority,
+            int? categoryId,
+            string? assignedUserId)
+        {
+            var query = _context.Requests
+                .Include(r => r.Category)
+                .Include(r => r.AssignedUser)
+                .AsQueryable();
+
+            if (status.HasValue)
+                query = query.Where(r => r.Status == status.Value);
+
+            if (priority.HasValue)
+                query = query.Where(r => r.Priority == priority.Value);
+
+            if (categoryId.HasValue)
+                query = query.Where(r => r.CategoryId == categoryId.Value);
+
+            if (!string.IsNullOrEmpty(assignedUserId))
+                query = query.Where(r => r.AssignedUserId == assignedUserId);
+
+            return await query.ToListAsync();
         }
     }
 }

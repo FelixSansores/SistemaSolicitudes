@@ -1,9 +1,10 @@
-﻿using System;
+﻿using SGS.Class.Enums;
+using SGS.Class.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using SGS.Class.Models;
 
 namespace SGS.Class.Interfaces
 {
@@ -19,5 +20,10 @@ namespace SGS.Class.Interfaces
 
         Task DeleteAsync(int id);
         Task<RequestModel?> GetWithCommentsAsync(int id);
+        Task<List<RequestModel>> GetFilteredAsync(
+             RequestStatus? status,
+             RequestPriority? priority,
+             int? categoryId,
+             string? assignedUserId);
     }
 }

@@ -1,12 +1,11 @@
-﻿using System;
+﻿using SGS.Class.Interfaces;
+using SGS.Class.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-using SGS.Class.Interfaces;
-using SGS.Class.Models;
-
+using SGS.Class.Enums;
 namespace SGS.Class.Services
 {
     public class RequestService : IRequestService
@@ -47,6 +46,18 @@ namespace SGS.Class.Services
         public async Task<RequestModel?> GetWithCommentsAsync(int id)
         {
             return await _repository.GetWithCommentsAsync(id);
+        }
+        public async Task<List<RequestModel>> GetFilteredAsync(
+            RequestStatus? status,
+            RequestPriority? priority,
+            int? categoryId,
+            string? assignedUserId)
+        {
+            return await _repository.GetFilteredAsync(
+                status,
+                priority,
+                categoryId,
+                assignedUserId);
         }
     }
 }
