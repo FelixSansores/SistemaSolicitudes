@@ -20,6 +20,21 @@
         <label>Ubicación</label>
         <input asp-for="Location" class="form-control" />
     </div>
+
+    <div class="mb-3">
+        <label>Categoría</label>
+
+        <select asp-for="CategoryId"
+                asp-items="ViewBag.Categories"
+                class="form-control">
+
+            <option value="">
+                Selecciona una categoría
+            </option>
+
+        </select>
+    </div>
+
     <div class="mb-3">
 
         <label>Estado</label>
