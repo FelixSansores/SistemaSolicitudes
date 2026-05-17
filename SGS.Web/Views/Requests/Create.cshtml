@@ -20,6 +20,20 @@
     </div>
 
     <div class="mb-3">
+        <label>Categoría</label>
+
+        <select asp-for="CategoryId"
+                asp-items="ViewBag.Categories"
+                class="form-control">
+
+            <option value="">
+                Selecciona una categoría
+            </option>
+
+        </select>
+    </div>
+
+    <div class="mb-3">
 
         <label>Prioridad</label>
 

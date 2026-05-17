@@ -4,20 +4,23 @@ using SGS.Class.Enums;
 using SGS.Class.Interfaces;
 using SGS.Class.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using SGS.Class;
 
 namespace SGS.Web.Controllers
 {
     [Authorize]
     public class RequestsController : Controller
     {
+        private readonly SGSDb _context;
         private readonly IRequestService _service;
         private readonly ICommentService _commentService;
 
-        public RequestsController(IRequestService service, ICommentService commentService)
+        public RequestsController(IRequestService service, ICommentService commentService, SGSDb context)
         {
             _service = service;
-
             _commentService = commentService;
+            _context = context;
         }
         public async Task<IActionResult> Index()
         {
@@ -28,6 +31,7 @@ namespace SGS.Web.Controllers
 
         public IActionResult Create()
         {
+            ViewBag.Categories = new SelectList(_context.Categories.ToList(), "Id", "Name");
             return View();
         }
 
@@ -37,9 +41,9 @@ namespace SGS.Web.Controllers
         {
             if (!ModelState.IsValid)
             {
+                ViewBag.Categories = new SelectList(_context.Categories.ToList(), "Id", "Name");
                 return View(request);
             }
-
             await _service.CreateAsync(request);
             request.CreatedAt = DateTime.Now;
 
@@ -69,7 +73,7 @@ namespace SGS.Web.Controllers
             {
                 return NotFound();
             }
-
+            ViewBag.Categories = new SelectList(_context.Categories.ToList(), "Id", "Name", request.CategoryId);
             return View(request);
         }
 
@@ -79,6 +83,7 @@ namespace SGS.Web.Controllers
         {
             if (!ModelState.IsValid)
             {
+                ViewBag.Categories = new SelectList(_context.Categories.ToList(), "Id", "Name", request.CategoryId);
                 return View(request);
             }
 
