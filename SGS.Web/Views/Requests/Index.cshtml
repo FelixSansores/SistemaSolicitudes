@@ -90,6 +90,8 @@
             <th>Categoría</th>
             <th>Descripción</th>
             <th>Responsable</th>
+            <th>Estado</th>
+            <th>Prioridad</th>
             <th>Ubicación</th>
             <th>Fecha</th>
         </tr>
@@ -103,6 +105,48 @@
                 <td>@item.Category?.Name</td>
                 <td>@item.Description</td>
                 <td>@(item.AssignedUser != null ? item.AssignedUser.FullName : "Sin asignar")</td>
+                <td>
+                    @if (item.Status == SGS.Class.Enums.RequestStatus.Pending)
+                    {
+                        <span class="badge bg-warning text-dark">Pendiente</span>
+                    }
+                    else if (item.Status == SGS.Class.Enums.RequestStatus.InProgress)
+                    {
+                        <span class="badge bg-primary">En proceso</span>
+                    }
+                    else if (item.Status == SGS.Class.Enums.RequestStatus.Completed)
+                    {
+                        <span class="badge bg-success">Completado</span>
+                    }
+                </td>
+
+                <td>
+                    @if (item.Priority == SGS.Class.Enums.RequestPriority.Low)
+                    {
+                        <span class="badge bg-secondary">
+                            Baja
+                        </span>
+                    }
+                    else if (item.Priority == SGS.Class.Enums.RequestPriority.Medium)
+                    {
+                        <span class="badge bg-info text-dark">
+                            Media
+                        </span>
+                    }
+                    else if (item.Priority == SGS.Class.Enums.RequestPriority.High)
+                    {
+                        <span class="badge bg-danger">
+                            Alta
+                        </span>
+                    }
+                    else if (item.Priority == SGS.Class.Enums.RequestPriority.Urgent)
+                    {
+                        <span class="badge bg-dark">
+                            Urgente
+                        </span>
+                    }
+                </td>
+
                 <td>@item.Location</td>
                 <td>@item.CreatedAt</td>
 

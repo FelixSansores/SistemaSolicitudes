@@ -92,7 +92,7 @@ namespace SGS.Web.Controllers
             request.CreatedByUserId = _userManager.GetUserId(User);
             request.CreatedAt = DateTime.Now;
             request.Status = RequestStatus.Pending;
-            request.Priority = RequestPriority.Medium;
+
             await _service.CreateAsync(request);
             return RedirectToAction(nameof(Index));
         }
