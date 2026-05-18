@@ -12,6 +12,7 @@
             <th>Nombre</th>
             <th>Correo</th>
             <th>Roles</th>
+            <th>Acciones</th>
         </tr>
     </thead>
 
@@ -20,9 +21,21 @@
         {
             <tr>
                 <td>@item.User.FullName</td>
+
                 <td>@item.User.Email</td>
+
                 <td>@string.Join(", ", item.Roles)</td>
+
+                <td>
+                    <a asp-action="EditRole"
+                       asp-route-id="@item.User.Id"
+                       class="btn btn-warning">
+                        Editar Rol
+                    </a>
+                </td>
+
             </tr>
+
         }
     </tbody>
 </table>

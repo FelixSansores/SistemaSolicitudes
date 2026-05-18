@@ -1,0 +1,39 @@
+﻿@model SGS.Web.Models.EditUserRoleViewModel
+@using Microsoft.AspNetCore.Identity
+
+<h1>Editar Rol</h1>
+
+<form asp-action="EditRole" method="post">
+
+    <input type="hidden" asp-for="UserId" />
+
+    <div class="mb-3">
+        <label>Nombre</label>
+        <input asp-for="FullName" class="form-control" readonly />
+    </div>
+
+    <div class="mb-3">
+        <label>Correo</label>
+        <input asp-for="Email" class="form-control" readonly />
+    </div>
+
+    <div class="mb-3">
+        <label>Rol</label>
+
+        <select asp-for="Role" class="form-control">
+            @foreach (var role in ViewBag.Roles as List<IdentityRole>)
+            {
+                <option value="@role.Name">@role.Name</option>
+            }
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-warning">
+        Guardar cambios
+    </button>
+
+    <a asp-action="Index" class="btn btn-secondary">
+        Cancelar
+    </a>
+
+</form>

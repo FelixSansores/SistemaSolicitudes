@@ -71,5 +71,53 @@ namespace SGS.Web.Controllers
             ViewBag.Roles = _roleManager.Roles.ToList();
             return View(model);
         }
+        public async Task<IActionResult> EditRole(string id)
+        {
+            var user = await _userManager.FindByIdAsync(id);
+
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            var roles = await _userManager.GetRolesAsync(user);
+
+            var model = new EditUserRoleViewModel
+            {
+                UserId = user.Id,
+                Email = user.Email ?? "",
+                FullName = user.FullName,
+                Role = roles.FirstOrDefault() ?? ""
+            };
+
+            ViewBag.Roles = _roleManager.Roles.ToList();
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> EditRole(EditUserRoleViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                ViewBag.Roles = _roleManager.Roles.ToList();
+                return View(model);
+            }
+
+            var user = await _userManager.FindByIdAsync(model.UserId);
+
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            var currentRoles = await _userManager.GetRolesAsync(user);
+
+            await _userManager.RemoveFromRolesAsync(user, currentRoles);
+
+            await _userManager.AddToRoleAsync(user, model.Role);
+
+            return RedirectToAction(nameof(Index));
+        }
     }
 }
