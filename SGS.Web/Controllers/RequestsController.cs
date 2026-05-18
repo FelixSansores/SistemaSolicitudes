@@ -37,21 +37,33 @@ namespace SGS.Web.Controllers
                 "Id",
                 "Name");
 
-            var tecnicos =
-                await _userManager.GetUsersInRoleAsync("Tecnico");
+            var tecnicos = await _userManager.GetUsersInRoleAsync("Tecnico");
 
-            ViewBag.Technicians =
-                new SelectList(
+            ViewBag.Technicians = new SelectList(
                     tecnicos,
                     "Id",
                     "FullName");
 
-            var requests =
-                await _service.GetFilteredAsync(
+            var requests = await _service.GetFilteredAsync(
                     status,
                     priority,
                     categoryId,
                     assignedUserId);
+
+            var currentUserId = _userManager.GetUserId(User);
+
+            if (User.IsInRole("Tecnico"))
+            {
+                requests = requests
+                    .Where(r => r.AssignedUserId == currentUserId)
+                    .ToList();
+            }
+            else if (User.IsInRole("User"))
+            {
+                requests = requests
+                    .Where(r => r.CreatedByUserId == currentUserId)
+                    .ToList();
+            }
 
             ViewBag.SelectedStatus = status;
             ViewBag.SelectedPriority = priority;
@@ -76,12 +88,12 @@ namespace SGS.Web.Controllers
                 ViewBag.Categories = new SelectList(_context.Categories.ToList(), "Id", "Name");
                 return View(request);
             }
-            await _service.CreateAsync(request);
+            
+            request.CreatedByUserId = _userManager.GetUserId(User);
             request.CreatedAt = DateTime.Now;
-
             request.Status = RequestStatus.Pending;
-
             request.Priority = RequestPriority.Medium;
+            await _service.CreateAsync(request);
             return RedirectToAction(nameof(Index));
         }
 

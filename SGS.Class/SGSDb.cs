@@ -39,8 +39,12 @@ namespace SGS.Class
                 .HasOne(r => r.Category)
                 .WithMany()
                 .HasForeignKey(r => r.CategoryId);
+
+            builder.Entity<RequestModel>()
+                .HasOne(r => r.CreatedByUser)
+                .WithMany()
+                .HasForeignKey(r => r.CreatedByUserId)
+                .OnDelete(DeleteBehavior.Restrict);
         }
-
-
     }
 }
