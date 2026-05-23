@@ -108,7 +108,7 @@ namespace SGS.Web.Controllers
 
             return View(request);
         }
-        [Authorize(Roles = "Admin, Tecnico")]
+        [Authorize(Roles = "Admin,Tecnico")]
         public async Task<IActionResult> Edit(int id)
         {
             var request = await _service.GetByIdAsync(id);
@@ -117,33 +117,72 @@ namespace SGS.Web.Controllers
             {
                 return NotFound();
             }
-            ViewBag.Categories = new SelectList(_context.Categories.ToList(), "Id", "Name", request.CategoryId);
+
+            ViewBag.Categories = new SelectList(
+                _context.Categories.ToList(),
+                "Id",
+                "Name",
+                request.CategoryId);
+
             var tecnicos = await _userManager.GetUsersInRoleAsync("Tecnico");
-            ViewBag.Technicians = new SelectList(tecnicos, "Id", "FullName", request.AssignedUserId);
+
+            ViewBag.Technicians = new SelectList(
+                tecnicos,
+                "Id",
+                "FullName",
+                request.AssignedUserId);
+
             return View(request);
         }
 
-        [Authorize(Roles = "Admin, Tecnico")]
+        [Authorize(Roles = "Admin,Tecnico")]
         [HttpPost]
         public async Task<IActionResult> Edit(RequestModel request)
         {
             if (!ModelState.IsValid)
             {
-                ViewBag.Categories = new SelectList(_context.Categories.ToList(), "Id", "Name", request.CategoryId);
+                ViewBag.Categories = new SelectList(
+                    _context.Categories.ToList(),
+                    "Id",
+                    "Name",
+                    request.CategoryId);
+
                 var tecnicos = await _userManager.GetUsersInRoleAsync("Tecnico");
-                ViewBag.Technicians = new SelectList(tecnicos, "Id", "FullName", request.AssignedUserId);
+
+                ViewBag.Technicians = new SelectList(
+                    tecnicos,
+                    "Id",
+                    "FullName",
+                    request.AssignedUserId);
+
                 return View(request);
             }
 
+            var existingRequest = await _service.GetByIdAsync(request.Id);
+
+            if (existingRequest == null)
+            {
+                return NotFound();
+            }
+
+            existingRequest.Title = request.Title;
+            existingRequest.Description = request.Description;
+            existingRequest.Location = request.Location;
+            existingRequest.CategoryId = request.CategoryId;
+            existingRequest.Status = request.Status;
+            existingRequest.Priority = request.Priority;
+            existingRequest.AssignedUserId = request.AssignedUserId;
+
             if (request.Status == SGS.Class.Enums.RequestStatus.Completed)
             {
-                request.ClosedAt = DateTime.Now;
+                existingRequest.ClosedAt = DateTime.Now;
             }
             else
             {
-                request.ClosedAt = null;
+                existingRequest.ClosedAt = null;
             }
-            await _service.UpdateAsync(request);
+
+            await _service.UpdateAsync(existingRequest);
 
             return RedirectToAction(nameof(Index));
         }
