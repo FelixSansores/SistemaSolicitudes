@@ -20,3 +20,112 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+:root {
+    --sgs-dark: #0b1f3a;
+    --sgs-dark-2: #132f55;
+    --sgs-card: #17365f;
+    --sgs-orange: #ff9200;
+    --sgs-light: #f4f7fb;
+    --sgs-white: #ffffff;
+}
+
+.sgs-body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0b1f3a 0%, #132f55 50%, #233f66 100%);
+    color: var(--sgs-white);
+}
+
+.sgs-navbar {
+    background: rgba(11, 31, 58, 0.95);
+    border-bottom: 1px solid rgba(255, 146, 0, 0.35);
+    padding: 18px 0;
+}
+
+.sgs-brand {
+    color: var(--sgs-white) !important;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+    .sgs-brand span {
+        color: var(--sgs-orange);
+    }
+
+.sgs-nav-link {
+    color: rgba(255,255,255,0.85) !important;
+    font-weight: 600;
+    margin: 0 12px;
+}
+
+    .sgs-nav-link:hover {
+        color: var(--sgs-orange) !important;
+    }
+
+.sgs-user {
+    color: var(--sgs-orange) !important;
+    font-weight: 600;
+}
+
+.sgs-btn-primary {
+    background: var(--sgs-orange);
+    color: #111;
+    font-weight: 700;
+    border: none;
+}
+
+    .sgs-btn-primary:hover {
+        background: #ffad33;
+        color: #111;
+    }
+
+.sgs-btn-outline {
+    border: 2px solid var(--sgs-white);
+    color: var(--sgs-white);
+    font-weight: 700;
+}
+
+    .sgs-btn-outline:hover {
+        background: var(--sgs-white);
+        color: var(--sgs-dark);
+    }
+
+.sgs-main {
+    min-height: calc(100vh - 140px);
+    padding: 45px 0;
+}
+
+.sgs-content {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 18px;
+    padding: 35px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+    backdrop-filter: blur(8px);
+}
+
+.sgs-footer {
+    color: rgba(255,255,255,0.65);
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Bootstrap overrides */
+.table {
+    color: var(--sgs-white);
+}
+
+    .table th {
+        color: var(--sgs-orange);
+    }
+
+.form-control,
+.form-select {
+    background-color: rgba(255,255,255,0.92);
+}
+
+.card {
+    background: rgba(255,255,255,0.12);
+    color: var(--sgs-white);
+    border: 1px solid rgba(255,255,255,0.15);
+}

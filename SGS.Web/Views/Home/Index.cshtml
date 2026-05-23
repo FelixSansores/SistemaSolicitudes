@@ -1,8 +1,46 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿<div class="text-center py-5">
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4 fw-bold">
+        Sistema de Gestión de <span style="color:#ff9200;">Solicitudes</span>
+    </h1>
+
+    <p class="lead mt-3">
+        Administra, asigna y da seguimiento a solicitudes internas de forma rápida,
+        segura y organizada.
+    </p>
+
+    <div class="mt-4">
+        @if (User.Identity != null && User.Identity.IsAuthenticated)
+        {
+            <a asp-controller="Requests"
+               asp-action="Index"
+               class="btn sgs-btn-primary btn-lg me-2">
+                Ver Solicitudes
+            </a>
+
+            @if (User.IsInRole("Admin"))
+            {
+                <a asp-controller="Admin"
+                   asp-action="Index"
+                   class="btn sgs-btn-outline btn-lg">
+                    Panel Admin
+                </a>
+            }
+        }
+        else
+        {
+            <a asp-controller="Auth"
+               asp-action="Login"
+               class="btn sgs-btn-primary btn-lg me-2">
+                Iniciar sesión
+            </a>
+
+            <a asp-controller="Auth"
+               asp-action="Register"
+               class="btn sgs-btn-outline btn-lg">
+                Registrarse
+            </a>
+        }
+    </div>
+
 </div>
