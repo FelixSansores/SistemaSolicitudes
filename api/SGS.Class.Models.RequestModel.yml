@@ -1,0 +1,1191 @@
+### YamlMime:ManagedReference
+items:
+- uid: SGS.Class.Models.RequestModel
+  commentId: T:SGS.Class.Models.RequestModel
+  id: RequestModel
+  parent: SGS.Class.Models
+  children:
+  - SGS.Class.Models.RequestModel.AssignedUser
+  - SGS.Class.Models.RequestModel.AssignedUserId
+  - SGS.Class.Models.RequestModel.Category
+  - SGS.Class.Models.RequestModel.CategoryId
+  - SGS.Class.Models.RequestModel.ClosedAt
+  - SGS.Class.Models.RequestModel.Comments
+  - SGS.Class.Models.RequestModel.CreatedAt
+  - SGS.Class.Models.RequestModel.CreatedByUser
+  - SGS.Class.Models.RequestModel.CreatedByUserId
+  - SGS.Class.Models.RequestModel.Description
+  - SGS.Class.Models.RequestModel.Id
+  - SGS.Class.Models.RequestModel.Location
+  - SGS.Class.Models.RequestModel.Priority
+  - SGS.Class.Models.RequestModel.Status
+  - SGS.Class.Models.RequestModel.Title
+  langs:
+  - csharp
+  - vb
+  name: RequestModel
+  nameWithType: RequestModel
+  fullName: SGS.Class.Models.RequestModel
+  type: Class
+  source:
+    remote:
+      path: SGS.Class/Models/RequestModel.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: RequestModel
+    path: SGS.Class/Models/RequestModel.cs
+    startLine: 14
+  assemblies:
+  - SGS.Class
+  namespace: SGS.Class.Models
+  summary: >-
+    Representa una solicitud dentro del sistema de gestión de solicitudes.
+
+    Contiene información general, estado, prioridad, categoría y usuarios relacionados.
+  example: []
+  syntax:
+    content: 'public class RequestModel : IEntity'
+    content.vb: Public Class RequestModel Implements IEntity
+  inheritance:
+  - System.Object
+  implements:
+  - SGS.Class.Models.IEntity
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: SGS.Class.Models.RequestModel.Id
+  commentId: P:SGS.Class.Models.RequestModel.Id
+  id: Id
+  parent: SGS.Class.Models.RequestModel
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: RequestModel.Id
+  fullName: SGS.Class.Models.RequestModel.Id
+  type: Property
+  source:
+    remote:
+      path: SGS.Class/Models/RequestModel.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: Id
+    path: SGS.Class/Models/RequestModel.cs
+    startLine: 19
+  assemblies:
+  - SGS.Class
+  namespace: SGS.Class.Models
+  summary: Identificador único de la solicitud.
+  example: []
+  syntax:
+    content: public int Id { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Id As Integer
+  overload: SGS.Class.Models.RequestModel.Id*
+  implements:
+  - SGS.Class.Models.IEntity.Id
+- uid: SGS.Class.Models.RequestModel.Title
+  commentId: P:SGS.Class.Models.RequestModel.Title
+  id: Title
+  parent: SGS.Class.Models.RequestModel
+  langs:
+  - csharp
+  - vb
+  name: Title
+  nameWithType: RequestModel.Title
+  fullName: SGS.Class.Models.RequestModel.Title
+  type: Property
+  source:
+    remote:
+      path: SGS.Class/Models/RequestModel.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: Title
+    path: SGS.Class/Models/RequestModel.cs
+    startLine: 24
+  assemblies:
+  - SGS.Class
+  namespace: SGS.Class.Models
+  summary: Título breve de la solicitud.
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      [StringLength(100)]
+
+      public string Title { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required>
+
+      <StringLength(100)>
+
+      Public Property Title As String
+  overload: SGS.Class.Models.RequestModel.Title*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.StringLengthAttribute
+    ctor: System.ComponentModel.DataAnnotations.StringLengthAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 100
+- uid: SGS.Class.Models.RequestModel.Description
+  commentId: P:SGS.Class.Models.RequestModel.Description
+  id: Description
+  parent: SGS.Class.Models.RequestModel
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: RequestModel.Description
+  fullName: SGS.Class.Models.RequestModel.Description
+  type: Property
+  source:
+    remote:
+      path: SGS.Class/Models/RequestModel.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: Description
+    path: SGS.Class/Models/RequestModel.cs
+    startLine: 31
+  assemblies:
+  - SGS.Class
+  namespace: SGS.Class.Models
+  summary: Descripción detallada del problema o solicitud.
+  example: []
+  syntax:
+    content: >-
+      [Required]
+
+      public string Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required>
+
+      Public Property Description As String
+  overload: SGS.Class.Models.RequestModel.Description*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+- uid: SGS.Class.Models.RequestModel.Location
+  commentId: P:SGS.Class.Models.RequestModel.Location
+  id: Location
+  parent: SGS.Class.Models.RequestModel
+  langs:
+  - csharp
+  - vb
+  name: Location
+  nameWithType: RequestModel.Location
+  fullName: SGS.Class.Models.RequestModel.Location
+  type: Property
+  source:
+    remote:
+      path: SGS.Class/Models/RequestModel.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: Location
+    path: SGS.Class/Models/RequestModel.cs
+    startLine: 37
+  assemblies:
+  - SGS.Class
+  namespace: SGS.Class.Models
+  summary: Ubicación donde ocurre el incidente o solicitud.
+  example: []
+  syntax:
+    content: public string Location { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Location As String
+  overload: SGS.Class.Models.RequestModel.Location*
+- uid: SGS.Class.Models.RequestModel.CreatedAt
+  commentId: P:SGS.Class.Models.RequestModel.CreatedAt
+  id: CreatedAt
+  parent: SGS.Class.Models.RequestModel
+  langs:
+  - csharp
+  - vb
+  name: CreatedAt
+  nameWithType: RequestModel.CreatedAt
+  fullName: SGS.Class.Models.RequestModel.CreatedAt
+  type: Property
+  source:
+    remote:
+      path: SGS.Class/Models/RequestModel.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: CreatedAt
+    path: SGS.Class/Models/RequestModel.cs
+    startLine: 42
+  assemblies:
+  - SGS.Class
+  namespace: SGS.Class.Models
+  summary: Fecha y hora en que se creó la solicitud.
+  example: []
+  syntax:
+    content: public DateTime CreatedAt { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public Property CreatedAt As Date
+  overload: SGS.Class.Models.RequestModel.CreatedAt*
+- uid: SGS.Class.Models.RequestModel.ClosedAt
+  commentId: P:SGS.Class.Models.RequestModel.ClosedAt
+  id: ClosedAt
+  parent: SGS.Class.Models.RequestModel
+  langs:
+  - csharp
+  - vb
+  name: ClosedAt
+  nameWithType: RequestModel.ClosedAt
+  fullName: SGS.Class.Models.RequestModel.ClosedAt
+  type: Property
+  source:
+    remote:
+      path: SGS.Class/Models/RequestModel.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: ClosedAt
+    path: SGS.Class/Models/RequestModel.cs
+    startLine: 47
+  assemblies:
+  - SGS.Class
+  namespace: SGS.Class.Models
+  summary: Fecha y hora en que la solicitud fue cerrada.
+  example: []
+  syntax:
+    content: public DateTime? ClosedAt { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTime}
+    content.vb: Public Property ClosedAt As Date?
+  overload: SGS.Class.Models.RequestModel.ClosedAt*
+- uid: SGS.Class.Models.RequestModel.Status
+  commentId: P:SGS.Class.Models.RequestModel.Status
+  id: Status
+  parent: SGS.Class.Models.RequestModel
+  langs:
+  - csharp
+  - vb
+  name: Status
+  nameWithType: RequestModel.Status
+  fullName: SGS.Class.Models.RequestModel.Status
+  type: Property
+  source:
+    remote:
+      path: SGS.Class/Models/RequestModel.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: Status
+    path: SGS.Class/Models/RequestModel.cs
+    startLine: 52
+  assemblies:
+  - SGS.Class
+  namespace: SGS.Class.Models
+  summary: Estado actual de la solicitud.
+  example: []
+  syntax:
+    content: public RequestStatus Status { get; set; }
+    parameters: []
+    return:
+      type: SGS.Class.Enums.RequestStatus
+    content.vb: Public Property Status As RequestStatus
+  overload: SGS.Class.Models.RequestModel.Status*
+- uid: SGS.Class.Models.RequestModel.Priority
+  commentId: P:SGS.Class.Models.RequestModel.Priority
+  id: Priority
+  parent: SGS.Class.Models.RequestModel
+  langs:
+  - csharp
+  - vb
+  name: Priority
+  nameWithType: RequestModel.Priority
+  fullName: SGS.Class.Models.RequestModel.Priority
+  type: Property
+  source:
+    remote:
+      path: SGS.Class/Models/RequestModel.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: Priority
+    path: SGS.Class/Models/RequestModel.cs
+    startLine: 57
+  assemblies:
+  - SGS.Class
+  namespace: SGS.Class.Models
+  summary: Nivel de prioridad asignado a la solicitud.
+  example: []
+  syntax:
+    content: public RequestPriority Priority { get; set; }
+    parameters: []
+    return:
+      type: SGS.Class.Enums.RequestPriority
+    content.vb: Public Property Priority As RequestPriority
+  overload: SGS.Class.Models.RequestModel.Priority*
+- uid: SGS.Class.Models.RequestModel.CategoryId
+  commentId: P:SGS.Class.Models.RequestModel.CategoryId
+  id: CategoryId
+  parent: SGS.Class.Models.RequestModel
+  langs:
+  - csharp
+  - vb
+  name: CategoryId
+  nameWithType: RequestModel.CategoryId
+  fullName: SGS.Class.Models.RequestModel.CategoryId
+  type: Property
+  source:
+    remote:
+      path: SGS.Class/Models/RequestModel.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: CategoryId
+    path: SGS.Class/Models/RequestModel.cs
+    startLine: 62
+  assemblies:
+  - SGS.Class
+  namespace: SGS.Class.Models
+  summary: Identificador de la categoría asociada a la solicitud.
+  example: []
+  syntax:
+    content: public int? CategoryId { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property CategoryId As Integer?
+  overload: SGS.Class.Models.RequestModel.CategoryId*
+- uid: SGS.Class.Models.RequestModel.Category
+  commentId: P:SGS.Class.Models.RequestModel.Category
+  id: Category
+  parent: SGS.Class.Models.RequestModel
+  langs:
+  - csharp
+  - vb
+  name: Category
+  nameWithType: RequestModel.Category
+  fullName: SGS.Class.Models.RequestModel.Category
+  type: Property
+  source:
+    remote:
+      path: SGS.Class/Models/RequestModel.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: Category
+    path: SGS.Class/Models/RequestModel.cs
+    startLine: 67
+  assemblies:
+  - SGS.Class
+  namespace: SGS.Class.Models
+  summary: Categoría relacionada con la solicitud.
+  example: []
+  syntax:
+    content: public CategoryModel? Category { get; set; }
+    parameters: []
+    return:
+      type: SGS.Class.Models.CategoryModel
+    content.vb: Public Property Category As CategoryModel
+  overload: SGS.Class.Models.RequestModel.Category*
+- uid: SGS.Class.Models.RequestModel.Comments
+  commentId: P:SGS.Class.Models.RequestModel.Comments
+  id: Comments
+  parent: SGS.Class.Models.RequestModel
+  langs:
+  - csharp
+  - vb
+  name: Comments
+  nameWithType: RequestModel.Comments
+  fullName: SGS.Class.Models.RequestModel.Comments
+  type: Property
+  source:
+    remote:
+      path: SGS.Class/Models/RequestModel.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: Comments
+    path: SGS.Class/Models/RequestModel.cs
+    startLine: 72
+  assemblies:
+  - SGS.Class
+  namespace: SGS.Class.Models
+  summary: Lista de comentarios asociados a la solicitud.
+  example: []
+  syntax:
+    content: public ICollection<CommentModel> Comments { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.ICollection{SGS.Class.Models.CommentModel}
+    content.vb: Public Property Comments As ICollection(Of CommentModel)
+  overload: SGS.Class.Models.RequestModel.Comments*
+- uid: SGS.Class.Models.RequestModel.AssignedUserId
+  commentId: P:SGS.Class.Models.RequestModel.AssignedUserId
+  id: AssignedUserId
+  parent: SGS.Class.Models.RequestModel
+  langs:
+  - csharp
+  - vb
+  name: AssignedUserId
+  nameWithType: RequestModel.AssignedUserId
+  fullName: SGS.Class.Models.RequestModel.AssignedUserId
+  type: Property
+  source:
+    remote:
+      path: SGS.Class/Models/RequestModel.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: AssignedUserId
+    path: SGS.Class/Models/RequestModel.cs
+    startLine: 77
+  assemblies:
+  - SGS.Class
+  namespace: SGS.Class.Models
+  summary: Identificador del usuario asignado a resolver la solicitud.
+  example: []
+  syntax:
+    content: public string? AssignedUserId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property AssignedUserId As String
+  overload: SGS.Class.Models.RequestModel.AssignedUserId*
+- uid: SGS.Class.Models.RequestModel.AssignedUser
+  commentId: P:SGS.Class.Models.RequestModel.AssignedUser
+  id: AssignedUser
+  parent: SGS.Class.Models.RequestModel
+  langs:
+  - csharp
+  - vb
+  name: AssignedUser
+  nameWithType: RequestModel.AssignedUser
+  fullName: SGS.Class.Models.RequestModel.AssignedUser
+  type: Property
+  source:
+    remote:
+      path: SGS.Class/Models/RequestModel.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: AssignedUser
+    path: SGS.Class/Models/RequestModel.cs
+    startLine: 82
+  assemblies:
+  - SGS.Class
+  namespace: SGS.Class.Models
+  summary: Usuario responsable asignado a la solicitud.
+  example: []
+  syntax:
+    content: public ApplicationUser? AssignedUser { get; set; }
+    parameters: []
+    return:
+      type: SGS.Class.Models.ApplicationUser
+    content.vb: Public Property AssignedUser As ApplicationUser
+  overload: SGS.Class.Models.RequestModel.AssignedUser*
+- uid: SGS.Class.Models.RequestModel.CreatedByUserId
+  commentId: P:SGS.Class.Models.RequestModel.CreatedByUserId
+  id: CreatedByUserId
+  parent: SGS.Class.Models.RequestModel
+  langs:
+  - csharp
+  - vb
+  name: CreatedByUserId
+  nameWithType: RequestModel.CreatedByUserId
+  fullName: SGS.Class.Models.RequestModel.CreatedByUserId
+  type: Property
+  source:
+    remote:
+      path: SGS.Class/Models/RequestModel.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: CreatedByUserId
+    path: SGS.Class/Models/RequestModel.cs
+    startLine: 87
+  assemblies:
+  - SGS.Class
+  namespace: SGS.Class.Models
+  summary: Identificador del usuario que creó la solicitud.
+  example: []
+  syntax:
+    content: public string? CreatedByUserId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CreatedByUserId As String
+  overload: SGS.Class.Models.RequestModel.CreatedByUserId*
+- uid: SGS.Class.Models.RequestModel.CreatedByUser
+  commentId: P:SGS.Class.Models.RequestModel.CreatedByUser
+  id: CreatedByUser
+  parent: SGS.Class.Models.RequestModel
+  langs:
+  - csharp
+  - vb
+  name: CreatedByUser
+  nameWithType: RequestModel.CreatedByUser
+  fullName: SGS.Class.Models.RequestModel.CreatedByUser
+  type: Property
+  source:
+    remote:
+      path: SGS.Class/Models/RequestModel.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: CreatedByUser
+    path: SGS.Class/Models/RequestModel.cs
+    startLine: 92
+  assemblies:
+  - SGS.Class
+  namespace: SGS.Class.Models
+  summary: Usuario que creó la solicitud.
+  example: []
+  syntax:
+    content: public ApplicationUser? CreatedByUser { get; set; }
+    parameters: []
+    return:
+      type: SGS.Class.Models.ApplicationUser
+    content.vb: Public Property CreatedByUser As ApplicationUser
+  overload: SGS.Class.Models.RequestModel.CreatedByUser*
+references:
+- uid: SGS.Class.Models
+  commentId: N:SGS.Class.Models
+  href: SGS.html
+  name: SGS.Class.Models
+  nameWithType: SGS.Class.Models
+  fullName: SGS.Class.Models
+  spec.csharp:
+  - uid: SGS
+    name: SGS
+    href: SGS.html
+  - name: .
+  - uid: SGS.Class
+    name: Class
+    href: SGS.Class.html
+  - name: .
+  - uid: SGS.Class.Models
+    name: Models
+    href: SGS.Class.Models.html
+  spec.vb:
+  - uid: SGS
+    name: SGS
+    href: SGS.html
+  - name: .
+  - uid: SGS.Class
+    name: Class
+    href: SGS.Class.html
+  - name: .
+  - uid: SGS.Class.Models
+    name: Models
+    href: SGS.Class.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: SGS.Class.Models.IEntity
+  commentId: T:SGS.Class.Models.IEntity
+  parent: SGS.Class.Models
+  href: SGS.Class.Models.IEntity.html
+  name: IEntity
+  nameWithType: IEntity
+  fullName: SGS.Class.Models.IEntity
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SGS.Class.Models.RequestModel.Id*
+  commentId: Overload:SGS.Class.Models.RequestModel.Id
+  href: SGS.Class.Models.RequestModel.html#SGS_Class_Models_RequestModel_Id
+  name: Id
+  nameWithType: RequestModel.Id
+  fullName: SGS.Class.Models.RequestModel.Id
+- uid: SGS.Class.Models.IEntity.Id
+  commentId: P:SGS.Class.Models.IEntity.Id
+  parent: SGS.Class.Models.IEntity
+  href: SGS.Class.Models.IEntity.html#SGS_Class_Models_IEntity_Id
+  name: Id
+  nameWithType: IEntity.Id
+  fullName: SGS.Class.Models.IEntity.Id
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SGS.Class.Models.RequestModel.Title*
+  commentId: Overload:SGS.Class.Models.RequestModel.Title
+  href: SGS.Class.Models.RequestModel.html#SGS_Class_Models_RequestModel_Title
+  name: Title
+  nameWithType: RequestModel.Title
+  fullName: SGS.Class.Models.RequestModel.Title
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SGS.Class.Models.RequestModel.Description*
+  commentId: Overload:SGS.Class.Models.RequestModel.Description
+  href: SGS.Class.Models.RequestModel.html#SGS_Class_Models_RequestModel_Description
+  name: Description
+  nameWithType: RequestModel.Description
+  fullName: SGS.Class.Models.RequestModel.Description
+- uid: SGS.Class.Models.RequestModel.Location*
+  commentId: Overload:SGS.Class.Models.RequestModel.Location
+  href: SGS.Class.Models.RequestModel.html#SGS_Class_Models_RequestModel_Location
+  name: Location
+  nameWithType: RequestModel.Location
+  fullName: SGS.Class.Models.RequestModel.Location
+- uid: SGS.Class.Models.RequestModel.CreatedAt*
+  commentId: Overload:SGS.Class.Models.RequestModel.CreatedAt
+  href: SGS.Class.Models.RequestModel.html#SGS_Class_Models_RequestModel_CreatedAt
+  name: CreatedAt
+  nameWithType: RequestModel.CreatedAt
+  fullName: SGS.Class.Models.RequestModel.CreatedAt
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: SGS.Class.Models.RequestModel.ClosedAt*
+  commentId: Overload:SGS.Class.Models.RequestModel.ClosedAt
+  href: SGS.Class.Models.RequestModel.html#SGS_Class_Models_RequestModel_ClosedAt
+  name: ClosedAt
+  nameWithType: RequestModel.ClosedAt
+  fullName: SGS.Class.Models.RequestModel.ClosedAt
+- uid: System.Nullable{System.DateTime}
+  commentId: T:System.Nullable{System.DateTime}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime?
+  nameWithType: DateTime?
+  fullName: System.DateTime?
+  nameWithType.vb: Date?
+  fullName.vb: Date?
+  name.vb: Date?
+  spec.csharp:
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+  spec.vb:
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SGS.Class.Models.RequestModel.Status*
+  commentId: Overload:SGS.Class.Models.RequestModel.Status
+  href: SGS.Class.Models.RequestModel.html#SGS_Class_Models_RequestModel_Status
+  name: Status
+  nameWithType: RequestModel.Status
+  fullName: SGS.Class.Models.RequestModel.Status
+- uid: SGS.Class.Enums.RequestStatus
+  commentId: T:SGS.Class.Enums.RequestStatus
+  parent: SGS.Class.Enums
+  href: SGS.Class.Enums.RequestStatus.html
+  name: RequestStatus
+  nameWithType: RequestStatus
+  fullName: SGS.Class.Enums.RequestStatus
+- uid: SGS.Class.Enums
+  commentId: N:SGS.Class.Enums
+  href: SGS.html
+  name: SGS.Class.Enums
+  nameWithType: SGS.Class.Enums
+  fullName: SGS.Class.Enums
+  spec.csharp:
+  - uid: SGS
+    name: SGS
+    href: SGS.html
+  - name: .
+  - uid: SGS.Class
+    name: Class
+    href: SGS.Class.html
+  - name: .
+  - uid: SGS.Class.Enums
+    name: Enums
+    href: SGS.Class.Enums.html
+  spec.vb:
+  - uid: SGS
+    name: SGS
+    href: SGS.html
+  - name: .
+  - uid: SGS.Class
+    name: Class
+    href: SGS.Class.html
+  - name: .
+  - uid: SGS.Class.Enums
+    name: Enums
+    href: SGS.Class.Enums.html
+- uid: SGS.Class.Models.RequestModel.Priority*
+  commentId: Overload:SGS.Class.Models.RequestModel.Priority
+  href: SGS.Class.Models.RequestModel.html#SGS_Class_Models_RequestModel_Priority
+  name: Priority
+  nameWithType: RequestModel.Priority
+  fullName: SGS.Class.Models.RequestModel.Priority
+- uid: SGS.Class.Enums.RequestPriority
+  commentId: T:SGS.Class.Enums.RequestPriority
+  parent: SGS.Class.Enums
+  href: SGS.Class.Enums.RequestPriority.html
+  name: RequestPriority
+  nameWithType: RequestPriority
+  fullName: SGS.Class.Enums.RequestPriority
+- uid: SGS.Class.Models.RequestModel.CategoryId*
+  commentId: Overload:SGS.Class.Models.RequestModel.CategoryId
+  href: SGS.Class.Models.RequestModel.html#SGS_Class_Models_RequestModel_CategoryId
+  name: CategoryId
+  nameWithType: RequestModel.CategoryId
+  fullName: SGS.Class.Models.RequestModel.CategoryId
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: SGS.Class.Models.RequestModel.Category*
+  commentId: Overload:SGS.Class.Models.RequestModel.Category
+  href: SGS.Class.Models.RequestModel.html#SGS_Class_Models_RequestModel_Category
+  name: Category
+  nameWithType: RequestModel.Category
+  fullName: SGS.Class.Models.RequestModel.Category
+- uid: SGS.Class.Models.CategoryModel
+  commentId: T:SGS.Class.Models.CategoryModel
+  parent: SGS.Class.Models
+  href: SGS.Class.Models.CategoryModel.html
+  name: CategoryModel
+  nameWithType: CategoryModel
+  fullName: SGS.Class.Models.CategoryModel
+- uid: SGS.Class.Models.RequestModel.Comments*
+  commentId: Overload:SGS.Class.Models.RequestModel.Comments
+  href: SGS.Class.Models.RequestModel.html#SGS_Class_Models_RequestModel_Comments
+  name: Comments
+  nameWithType: RequestModel.Comments
+  fullName: SGS.Class.Models.RequestModel.Comments
+- uid: System.Collections.Generic.ICollection{SGS.Class.Models.CommentModel}
+  commentId: T:System.Collections.Generic.ICollection{SGS.Class.Models.CommentModel}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<CommentModel>
+  nameWithType: ICollection<CommentModel>
+  fullName: System.Collections.Generic.ICollection<SGS.Class.Models.CommentModel>
+  nameWithType.vb: ICollection(Of CommentModel)
+  fullName.vb: System.Collections.Generic.ICollection(Of SGS.Class.Models.CommentModel)
+  name.vb: ICollection(Of CommentModel)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - uid: SGS.Class.Models.CommentModel
+    name: CommentModel
+    href: SGS.Class.Models.CommentModel.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SGS.Class.Models.CommentModel
+    name: CommentModel
+    href: SGS.Class.Models.CommentModel.html
+  - name: )
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: SGS.Class.Models.RequestModel.AssignedUserId*
+  commentId: Overload:SGS.Class.Models.RequestModel.AssignedUserId
+  href: SGS.Class.Models.RequestModel.html#SGS_Class_Models_RequestModel_AssignedUserId
+  name: AssignedUserId
+  nameWithType: RequestModel.AssignedUserId
+  fullName: SGS.Class.Models.RequestModel.AssignedUserId
+- uid: SGS.Class.Models.RequestModel.AssignedUser*
+  commentId: Overload:SGS.Class.Models.RequestModel.AssignedUser
+  href: SGS.Class.Models.RequestModel.html#SGS_Class_Models_RequestModel_AssignedUser
+  name: AssignedUser
+  nameWithType: RequestModel.AssignedUser
+  fullName: SGS.Class.Models.RequestModel.AssignedUser
+- uid: SGS.Class.Models.ApplicationUser
+  commentId: T:SGS.Class.Models.ApplicationUser
+  parent: SGS.Class.Models
+  href: SGS.Class.Models.ApplicationUser.html
+  name: ApplicationUser
+  nameWithType: ApplicationUser
+  fullName: SGS.Class.Models.ApplicationUser
+- uid: SGS.Class.Models.RequestModel.CreatedByUserId*
+  commentId: Overload:SGS.Class.Models.RequestModel.CreatedByUserId
+  href: SGS.Class.Models.RequestModel.html#SGS_Class_Models_RequestModel_CreatedByUserId
+  name: CreatedByUserId
+  nameWithType: RequestModel.CreatedByUserId
+  fullName: SGS.Class.Models.RequestModel.CreatedByUserId
+- uid: SGS.Class.Models.RequestModel.CreatedByUser*
+  commentId: Overload:SGS.Class.Models.RequestModel.CreatedByUser
+  href: SGS.Class.Models.RequestModel.html#SGS_Class_Models_RequestModel_CreatedByUser
+  name: CreatedByUser
+  nameWithType: RequestModel.CreatedByUser
+  fullName: SGS.Class.Models.RequestModel.CreatedByUser

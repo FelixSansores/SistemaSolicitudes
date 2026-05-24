@@ -1,0 +1,535 @@
+### YamlMime:ManagedReference
+items:
+- uid: SGS.Web.Models.RegisterViewModel
+  commentId: T:SGS.Web.Models.RegisterViewModel
+  id: RegisterViewModel
+  parent: SGS.Web.Models
+  children:
+  - SGS.Web.Models.RegisterViewModel.ConfirmPassword
+  - SGS.Web.Models.RegisterViewModel.Email
+  - SGS.Web.Models.RegisterViewModel.FullName
+  - SGS.Web.Models.RegisterViewModel.Password
+  langs:
+  - csharp
+  - vb
+  name: RegisterViewModel
+  nameWithType: RegisterViewModel
+  fullName: SGS.Web.Models.RegisterViewModel
+  type: Class
+  source:
+    remote:
+      path: SGS.Web/Models/RegisterViewModel.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: RegisterViewModel
+    path: SGS.Web/Models/RegisterViewModel.cs
+    startLine: 4
+  assemblies:
+  - SGS.Web
+  namespace: SGS.Web.Models
+  syntax:
+    content: public class RegisterViewModel
+    content.vb: Public Class RegisterViewModel
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: SGS.Web.Models.RegisterViewModel.FullName
+  commentId: P:SGS.Web.Models.RegisterViewModel.FullName
+  id: FullName
+  parent: SGS.Web.Models.RegisterViewModel
+  langs:
+  - csharp
+  - vb
+  name: FullName
+  nameWithType: RegisterViewModel.FullName
+  fullName: SGS.Web.Models.RegisterViewModel.FullName
+  type: Property
+  source:
+    remote:
+      path: SGS.Web/Models/RegisterViewModel.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: FullName
+    path: SGS.Web/Models/RegisterViewModel.cs
+    startLine: 6
+  assemblies:
+  - SGS.Web
+  namespace: SGS.Web.Models
+  syntax:
+    content: >-
+      [Required]
+
+      public string FullName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required>
+
+      Public Property FullName As String
+  overload: SGS.Web.Models.RegisterViewModel.FullName*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+- uid: SGS.Web.Models.RegisterViewModel.Email
+  commentId: P:SGS.Web.Models.RegisterViewModel.Email
+  id: Email
+  parent: SGS.Web.Models.RegisterViewModel
+  langs:
+  - csharp
+  - vb
+  name: Email
+  nameWithType: RegisterViewModel.Email
+  fullName: SGS.Web.Models.RegisterViewModel.Email
+  type: Property
+  source:
+    remote:
+      path: SGS.Web/Models/RegisterViewModel.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: Email
+    path: SGS.Web/Models/RegisterViewModel.cs
+    startLine: 9
+  assemblies:
+  - SGS.Web
+  namespace: SGS.Web.Models
+  syntax:
+    content: >-
+      [Required]
+
+      [EmailAddress]
+
+      public string Email { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required>
+
+      <EmailAddress>
+
+      Public Property Email As String
+  overload: SGS.Web.Models.RegisterViewModel.Email*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.EmailAddressAttribute
+    ctor: System.ComponentModel.DataAnnotations.EmailAddressAttribute.#ctor
+    arguments: []
+- uid: SGS.Web.Models.RegisterViewModel.Password
+  commentId: P:SGS.Web.Models.RegisterViewModel.Password
+  id: Password
+  parent: SGS.Web.Models.RegisterViewModel
+  langs:
+  - csharp
+  - vb
+  name: Password
+  nameWithType: RegisterViewModel.Password
+  fullName: SGS.Web.Models.RegisterViewModel.Password
+  type: Property
+  source:
+    remote:
+      path: SGS.Web/Models/RegisterViewModel.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: Password
+    path: SGS.Web/Models/RegisterViewModel.cs
+    startLine: 13
+  assemblies:
+  - SGS.Web
+  namespace: SGS.Web.Models
+  syntax:
+    content: >-
+      [Required]
+
+      [DataType(DataType.Password)]
+
+      public string Password { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required>
+
+      <DataType(DataType.Password)>
+
+      Public Property Password As String
+  overload: SGS.Web.Models.RegisterViewModel.Password*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.DataTypeAttribute
+    ctor: System.ComponentModel.DataAnnotations.DataTypeAttribute.#ctor(System.ComponentModel.DataAnnotations.DataType)
+    arguments:
+    - type: System.ComponentModel.DataAnnotations.DataType
+      value: 11
+- uid: SGS.Web.Models.RegisterViewModel.ConfirmPassword
+  commentId: P:SGS.Web.Models.RegisterViewModel.ConfirmPassword
+  id: ConfirmPassword
+  parent: SGS.Web.Models.RegisterViewModel
+  langs:
+  - csharp
+  - vb
+  name: ConfirmPassword
+  nameWithType: RegisterViewModel.ConfirmPassword
+  fullName: SGS.Web.Models.RegisterViewModel.ConfirmPassword
+  type: Property
+  source:
+    remote:
+      path: SGS.Web/Models/RegisterViewModel.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: ConfirmPassword
+    path: SGS.Web/Models/RegisterViewModel.cs
+    startLine: 17
+  assemblies:
+  - SGS.Web
+  namespace: SGS.Web.Models
+  syntax:
+    content: >-
+      [Required]
+
+      [Compare("Password")]
+
+      [DataType(DataType.Password)]
+
+      public string ConfirmPassword { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <Required>
+
+      <Compare("Password")>
+
+      <DataType(DataType.Password)>
+
+      Public Property ConfirmPassword As String
+  overload: SGS.Web.Models.RegisterViewModel.ConfirmPassword*
+  attributes:
+  - type: System.ComponentModel.DataAnnotations.RequiredAttribute
+    ctor: System.ComponentModel.DataAnnotations.RequiredAttribute.#ctor
+    arguments: []
+  - type: System.ComponentModel.DataAnnotations.CompareAttribute
+    ctor: System.ComponentModel.DataAnnotations.CompareAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Password
+  - type: System.ComponentModel.DataAnnotations.DataTypeAttribute
+    ctor: System.ComponentModel.DataAnnotations.DataTypeAttribute.#ctor(System.ComponentModel.DataAnnotations.DataType)
+    arguments:
+    - type: System.ComponentModel.DataAnnotations.DataType
+      value: 11
+references:
+- uid: SGS.Web.Models
+  commentId: N:SGS.Web.Models
+  href: SGS.html
+  name: SGS.Web.Models
+  nameWithType: SGS.Web.Models
+  fullName: SGS.Web.Models
+  spec.csharp:
+  - uid: SGS
+    name: SGS
+    href: SGS.html
+  - name: .
+  - uid: SGS.Web
+    name: Web
+    href: SGS.Web.html
+  - name: .
+  - uid: SGS.Web.Models
+    name: Models
+    href: SGS.Web.Models.html
+  spec.vb:
+  - uid: SGS
+    name: SGS
+    href: SGS.html
+  - name: .
+  - uid: SGS.Web
+    name: Web
+    href: SGS.Web.html
+  - name: .
+  - uid: SGS.Web.Models
+    name: Models
+    href: SGS.Web.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SGS.Web.Models.RegisterViewModel.FullName*
+  commentId: Overload:SGS.Web.Models.RegisterViewModel.FullName
+  href: SGS.Web.Models.RegisterViewModel.html#SGS_Web_Models_RegisterViewModel_FullName
+  name: FullName
+  nameWithType: RegisterViewModel.FullName
+  fullName: SGS.Web.Models.RegisterViewModel.FullName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SGS.Web.Models.RegisterViewModel.Email*
+  commentId: Overload:SGS.Web.Models.RegisterViewModel.Email
+  href: SGS.Web.Models.RegisterViewModel.html#SGS_Web_Models_RegisterViewModel_Email
+  name: Email
+  nameWithType: RegisterViewModel.Email
+  fullName: SGS.Web.Models.RegisterViewModel.Email
+- uid: SGS.Web.Models.RegisterViewModel.Password*
+  commentId: Overload:SGS.Web.Models.RegisterViewModel.Password
+  href: SGS.Web.Models.RegisterViewModel.html#SGS_Web_Models_RegisterViewModel_Password
+  name: Password
+  nameWithType: RegisterViewModel.Password
+  fullName: SGS.Web.Models.RegisterViewModel.Password
+- uid: SGS.Web.Models.RegisterViewModel.ConfirmPassword*
+  commentId: Overload:SGS.Web.Models.RegisterViewModel.ConfirmPassword
+  href: SGS.Web.Models.RegisterViewModel.html#SGS_Web_Models_RegisterViewModel_ConfirmPassword
+  name: ConfirmPassword
+  nameWithType: RegisterViewModel.ConfirmPassword
+  fullName: SGS.Web.Models.RegisterViewModel.ConfirmPassword

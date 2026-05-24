@@ -1,0 +1,51 @@
+### YamlMime:ManagedReference
+items:
+- uid: SGS.Web.Controllers
+  commentId: N:SGS.Web.Controllers
+  id: SGS.Web.Controllers
+  children:
+  - SGS.Web.Controllers.AdminController
+  - SGS.Web.Controllers.AuthController
+  - SGS.Web.Controllers.HomeController
+  - SGS.Web.Controllers.RequestsController
+  - SGS.Web.Controllers.UserManagementController
+  langs:
+  - csharp
+  - vb
+  name: SGS.Web.Controllers
+  nameWithType: SGS.Web.Controllers
+  fullName: SGS.Web.Controllers
+  type: Namespace
+  assemblies:
+  - SGS.Web
+references:
+- uid: SGS.Web.Controllers.AdminController
+  commentId: T:SGS.Web.Controllers.AdminController
+  href: SGS.Web.Controllers.AdminController.html
+  name: AdminController
+  nameWithType: AdminController
+  fullName: SGS.Web.Controllers.AdminController
+- uid: SGS.Web.Controllers.AuthController
+  commentId: T:SGS.Web.Controllers.AuthController
+  href: SGS.Web.Controllers.AuthController.html
+  name: AuthController
+  nameWithType: AuthController
+  fullName: SGS.Web.Controllers.AuthController
+- uid: SGS.Web.Controllers.HomeController
+  commentId: T:SGS.Web.Controllers.HomeController
+  href: SGS.Web.Controllers.HomeController.html
+  name: HomeController
+  nameWithType: HomeController
+  fullName: SGS.Web.Controllers.HomeController
+- uid: SGS.Web.Controllers.RequestsController
+  commentId: T:SGS.Web.Controllers.RequestsController
+  href: SGS.Web.Controllers.RequestsController.html
+  name: RequestsController
+  nameWithType: RequestsController
+  fullName: SGS.Web.Controllers.RequestsController
+- uid: SGS.Web.Controllers.UserManagementController
+  commentId: T:SGS.Web.Controllers.UserManagementController
+  href: SGS.Web.Controllers.UserManagementController.html
+  name: UserManagementController
+  nameWithType: UserManagementController
+  fullName: SGS.Web.Controllers.UserManagementController

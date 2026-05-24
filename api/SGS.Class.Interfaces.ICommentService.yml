@@ -1,0 +1,315 @@
+### YamlMime:ManagedReference
+items:
+- uid: SGS.Class.Interfaces.ICommentService
+  commentId: T:SGS.Class.Interfaces.ICommentService
+  id: ICommentService
+  parent: SGS.Class.Interfaces
+  children:
+  - SGS.Class.Interfaces.ICommentService.CreateAsync(SGS.Class.Models.CommentModel)
+  - SGS.Class.Interfaces.ICommentService.GetByRequestIdAsync(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: ICommentService
+  nameWithType: ICommentService
+  fullName: SGS.Class.Interfaces.ICommentService
+  type: Interface
+  source:
+    remote:
+      path: SGS.Class/Interfaces/ICommentService.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: ICommentService
+    path: SGS.Class/Interfaces/ICommentService.cs
+    startLine: 9
+  assemblies:
+  - SGS.Class
+  namespace: SGS.Class.Interfaces
+  syntax:
+    content: public interface ICommentService
+    content.vb: Public Interface ICommentService
+  derivedClasses:
+  - SGS.Class.Services.CommentService
+- uid: SGS.Class.Interfaces.ICommentService.GetByRequestIdAsync(System.Int32)
+  commentId: M:SGS.Class.Interfaces.ICommentService.GetByRequestIdAsync(System.Int32)
+  id: GetByRequestIdAsync(System.Int32)
+  parent: SGS.Class.Interfaces.ICommentService
+  langs:
+  - csharp
+  - vb
+  name: GetByRequestIdAsync(int)
+  nameWithType: ICommentService.GetByRequestIdAsync(int)
+  fullName: SGS.Class.Interfaces.ICommentService.GetByRequestIdAsync(int)
+  type: Method
+  source:
+    remote:
+      path: SGS.Class/Interfaces/ICommentService.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: GetByRequestIdAsync
+    path: SGS.Class/Interfaces/ICommentService.cs
+    startLine: 11
+  assemblies:
+  - SGS.Class
+  namespace: SGS.Class.Interfaces
+  syntax:
+    content: Task<List<CommentModel>> GetByRequestIdAsync(int requestId)
+    parameters:
+    - id: requestId
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{SGS.Class.Models.CommentModel}}
+    content.vb: Function GetByRequestIdAsync(requestId As Integer) As Task(Of List(Of CommentModel))
+  overload: SGS.Class.Interfaces.ICommentService.GetByRequestIdAsync*
+  nameWithType.vb: ICommentService.GetByRequestIdAsync(Integer)
+  fullName.vb: SGS.Class.Interfaces.ICommentService.GetByRequestIdAsync(Integer)
+  name.vb: GetByRequestIdAsync(Integer)
+- uid: SGS.Class.Interfaces.ICommentService.CreateAsync(SGS.Class.Models.CommentModel)
+  commentId: M:SGS.Class.Interfaces.ICommentService.CreateAsync(SGS.Class.Models.CommentModel)
+  id: CreateAsync(SGS.Class.Models.CommentModel)
+  parent: SGS.Class.Interfaces.ICommentService
+  langs:
+  - csharp
+  - vb
+  name: CreateAsync(CommentModel)
+  nameWithType: ICommentService.CreateAsync(CommentModel)
+  fullName: SGS.Class.Interfaces.ICommentService.CreateAsync(SGS.Class.Models.CommentModel)
+  type: Method
+  source:
+    remote:
+      path: SGS.Class/Interfaces/ICommentService.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: CreateAsync
+    path: SGS.Class/Interfaces/ICommentService.cs
+    startLine: 13
+  assemblies:
+  - SGS.Class
+  namespace: SGS.Class.Interfaces
+  syntax:
+    content: Task CreateAsync(CommentModel comment)
+    parameters:
+    - id: comment
+      type: SGS.Class.Models.CommentModel
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function CreateAsync(comment As CommentModel) As Task
+  overload: SGS.Class.Interfaces.ICommentService.CreateAsync*
+references:
+- uid: SGS.Class.Interfaces
+  commentId: N:SGS.Class.Interfaces
+  href: SGS.html
+  name: SGS.Class.Interfaces
+  nameWithType: SGS.Class.Interfaces
+  fullName: SGS.Class.Interfaces
+  spec.csharp:
+  - uid: SGS
+    name: SGS
+    href: SGS.html
+  - name: .
+  - uid: SGS.Class
+    name: Class
+    href: SGS.Class.html
+  - name: .
+  - uid: SGS.Class.Interfaces
+    name: Interfaces
+    href: SGS.Class.Interfaces.html
+  spec.vb:
+  - uid: SGS
+    name: SGS
+    href: SGS.html
+  - name: .
+  - uid: SGS.Class
+    name: Class
+    href: SGS.Class.html
+  - name: .
+  - uid: SGS.Class.Interfaces
+    name: Interfaces
+    href: SGS.Class.Interfaces.html
+- uid: SGS.Class.Interfaces.ICommentService.GetByRequestIdAsync*
+  commentId: Overload:SGS.Class.Interfaces.ICommentService.GetByRequestIdAsync
+  href: SGS.Class.Interfaces.ICommentService.html#SGS_Class_Interfaces_ICommentService_GetByRequestIdAsync_System_Int32_
+  name: GetByRequestIdAsync
+  nameWithType: ICommentService.GetByRequestIdAsync
+  fullName: SGS.Class.Interfaces.ICommentService.GetByRequestIdAsync
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{SGS.Class.Models.CommentModel}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{SGS.Class.Models.CommentModel}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<CommentModel>>
+  nameWithType: Task<List<CommentModel>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<SGS.Class.Models.CommentModel>>
+  nameWithType.vb: Task(Of List(Of CommentModel))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of SGS.Class.Models.CommentModel))
+  name.vb: Task(Of List(Of CommentModel))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SGS.Class.Models.CommentModel
+    name: CommentModel
+    href: SGS.Class.Models.CommentModel.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SGS.Class.Models.CommentModel
+    name: CommentModel
+    href: SGS.Class.Models.CommentModel.html
+  - name: )
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: SGS.Class.Interfaces.ICommentService.CreateAsync*
+  commentId: Overload:SGS.Class.Interfaces.ICommentService.CreateAsync
+  href: SGS.Class.Interfaces.ICommentService.html#SGS_Class_Interfaces_ICommentService_CreateAsync_SGS_Class_Models_CommentModel_
+  name: CreateAsync
+  nameWithType: ICommentService.CreateAsync
+  fullName: SGS.Class.Interfaces.ICommentService.CreateAsync
+- uid: SGS.Class.Models.CommentModel
+  commentId: T:SGS.Class.Models.CommentModel
+  parent: SGS.Class.Models
+  href: SGS.Class.Models.CommentModel.html
+  name: CommentModel
+  nameWithType: CommentModel
+  fullName: SGS.Class.Models.CommentModel
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: SGS.Class.Models
+  commentId: N:SGS.Class.Models
+  href: SGS.html
+  name: SGS.Class.Models
+  nameWithType: SGS.Class.Models
+  fullName: SGS.Class.Models
+  spec.csharp:
+  - uid: SGS
+    name: SGS
+    href: SGS.html
+  - name: .
+  - uid: SGS.Class
+    name: Class
+    href: SGS.Class.html
+  - name: .
+  - uid: SGS.Class.Models
+    name: Models
+    href: SGS.Class.Models.html
+  spec.vb:
+  - uid: SGS
+    name: SGS
+    href: SGS.html
+  - name: .
+  - uid: SGS.Class
+    name: Class
+    href: SGS.Class.html
+  - name: .
+  - uid: SGS.Class.Models
+    name: Models
+    href: SGS.Class.Models.html

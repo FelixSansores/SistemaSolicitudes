@@ -1,0 +1,52 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dotnet/docfx/main/schemas/docfx.schema.json",
+
+  "metadata": [
+    {
+      "src": [
+        {
+          "src": "..",
+          "files": [
+            "SGS.Web/*.csproj",
+            "SGS.Class/*.csproj"
+          ]
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.{md,yml}"
+        ],
+        "exclude": [
+          "_site/**"
+        ]
+      }
+    ],
+
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ]
+      }
+    ],
+
+    "output": "_site",
+
+    "template": [
+      "default",
+      "modern"
+    ],
+
+    "globalMetadata": {
+      "_appName": "SGS",
+      "_appTitle": "Sistema de Gestión de Solicitudes",
+      "_enableSearch": true
+    }
+  }
+}

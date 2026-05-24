@@ -1,0 +1,119 @@
+### YamlMime:ManagedReference
+items:
+- uid: SGS.Class.Models.IEntity
+  commentId: T:SGS.Class.Models.IEntity
+  id: IEntity
+  parent: SGS.Class.Models
+  children:
+  - SGS.Class.Models.IEntity.Id
+  langs:
+  - csharp
+  - vb
+  name: IEntity
+  nameWithType: IEntity
+  fullName: SGS.Class.Models.IEntity
+  type: Interface
+  source:
+    remote:
+      path: SGS.Class/Models/IEntity.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: IEntity
+    path: SGS.Class/Models/IEntity.cs
+    startLine: 8
+  assemblies:
+  - SGS.Class
+  namespace: SGS.Class.Models
+  syntax:
+    content: public interface IEntity
+    content.vb: Public Interface IEntity
+  derivedClasses:
+  - SGS.Class.Models.CategoryModel
+  - SGS.Class.Models.CommentModel
+  - SGS.Class.Models.PriorityModel
+  - SGS.Class.Models.RequestModel
+  - SGS.Class.Models.StatusModel
+- uid: SGS.Class.Models.IEntity.Id
+  commentId: P:SGS.Class.Models.IEntity.Id
+  id: Id
+  parent: SGS.Class.Models.IEntity
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: IEntity.Id
+  fullName: SGS.Class.Models.IEntity.Id
+  type: Property
+  source:
+    remote:
+      path: SGS.Class/Models/IEntity.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: Id
+    path: SGS.Class/Models/IEntity.cs
+    startLine: 10
+  assemblies:
+  - SGS.Class
+  namespace: SGS.Class.Models
+  syntax:
+    content: int Id { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property Id As Integer
+  overload: SGS.Class.Models.IEntity.Id*
+references:
+- uid: SGS.Class.Models
+  commentId: N:SGS.Class.Models
+  href: SGS.html
+  name: SGS.Class.Models
+  nameWithType: SGS.Class.Models
+  fullName: SGS.Class.Models
+  spec.csharp:
+  - uid: SGS
+    name: SGS
+    href: SGS.html
+  - name: .
+  - uid: SGS.Class
+    name: Class
+    href: SGS.Class.html
+  - name: .
+  - uid: SGS.Class.Models
+    name: Models
+    href: SGS.Class.Models.html
+  spec.vb:
+  - uid: SGS
+    name: SGS
+    href: SGS.html
+  - name: .
+  - uid: SGS.Class
+    name: Class
+    href: SGS.Class.html
+  - name: .
+  - uid: SGS.Class.Models
+    name: Models
+    href: SGS.Class.Models.html
+- uid: SGS.Class.Models.IEntity.Id*
+  commentId: Overload:SGS.Class.Models.IEntity.Id
+  href: SGS.Class.Models.IEntity.html#SGS_Class_Models_IEntity_Id
+  name: Id
+  nameWithType: IEntity.Id
+  fullName: SGS.Class.Models.IEntity.Id
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

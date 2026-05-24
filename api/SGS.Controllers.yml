@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: SGS.Controllers
+  commentId: N:SGS.Controllers
+  id: SGS.Controllers
+  children:
+  - SGS.Controllers.HomeController
+  langs:
+  - csharp
+  - vb
+  name: SGS.Controllers
+  nameWithType: SGS.Controllers
+  fullName: SGS.Controllers
+  type: Namespace
+  assemblies:
+  - SGS
+references:
+- uid: SGS.Controllers.HomeController
+  commentId: T:SGS.Controllers.HomeController
+  href: SGS.Controllers.HomeController.html
+  name: HomeController
+  nameWithType: HomeController
+  fullName: SGS.Controllers.HomeController

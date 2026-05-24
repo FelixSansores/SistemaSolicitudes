@@ -1,0 +1,104 @@
+### YamlMime:ManagedReference
+items:
+- uid: SGS.Class.Interfaces
+  commentId: N:SGS.Class.Interfaces
+  id: SGS.Class.Interfaces
+  children:
+  - SGS.Class.Interfaces.ICommentRepository
+  - SGS.Class.Interfaces.ICommentService
+  - SGS.Class.Interfaces.IRepository`1
+  - SGS.Class.Interfaces.IRequestRepository
+  - SGS.Class.Interfaces.IRequestService
+  langs:
+  - csharp
+  - vb
+  name: SGS.Class.Interfaces
+  nameWithType: SGS.Class.Interfaces
+  fullName: SGS.Class.Interfaces
+  type: Namespace
+  assemblies:
+  - SGS.Class
+references:
+- uid: SGS.Class.Interfaces.ICommentRepository
+  commentId: T:SGS.Class.Interfaces.ICommentRepository
+  parent: SGS.Class.Interfaces
+  href: SGS.Class.Interfaces.ICommentRepository.html
+  name: ICommentRepository
+  nameWithType: ICommentRepository
+  fullName: SGS.Class.Interfaces.ICommentRepository
+- uid: SGS.Class.Interfaces.ICommentService
+  commentId: T:SGS.Class.Interfaces.ICommentService
+  parent: SGS.Class.Interfaces
+  href: SGS.Class.Interfaces.ICommentService.html
+  name: ICommentService
+  nameWithType: ICommentService
+  fullName: SGS.Class.Interfaces.ICommentService
+- uid: SGS.Class.Interfaces.IRepository`1
+  commentId: T:SGS.Class.Interfaces.IRepository`1
+  href: SGS.Class.Interfaces.IRepository-1.html
+  name: IRepository<T>
+  nameWithType: IRepository<T>
+  fullName: SGS.Class.Interfaces.IRepository<T>
+  nameWithType.vb: IRepository(Of T)
+  fullName.vb: SGS.Class.Interfaces.IRepository(Of T)
+  name.vb: IRepository(Of T)
+  spec.csharp:
+  - uid: SGS.Class.Interfaces.IRepository`1
+    name: IRepository
+    href: SGS.Class.Interfaces.IRepository-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SGS.Class.Interfaces.IRepository`1
+    name: IRepository
+    href: SGS.Class.Interfaces.IRepository-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SGS.Class.Interfaces.IRequestRepository
+  commentId: T:SGS.Class.Interfaces.IRequestRepository
+  parent: SGS.Class.Interfaces
+  href: SGS.Class.Interfaces.IRequestRepository.html
+  name: IRequestRepository
+  nameWithType: IRequestRepository
+  fullName: SGS.Class.Interfaces.IRequestRepository
+- uid: SGS.Class.Interfaces.IRequestService
+  commentId: T:SGS.Class.Interfaces.IRequestService
+  parent: SGS.Class.Interfaces
+  href: SGS.Class.Interfaces.IRequestService.html
+  name: IRequestService
+  nameWithType: IRequestService
+  fullName: SGS.Class.Interfaces.IRequestService
+- uid: SGS.Class.Interfaces
+  commentId: N:SGS.Class.Interfaces
+  href: SGS.html
+  name: SGS.Class.Interfaces
+  nameWithType: SGS.Class.Interfaces
+  fullName: SGS.Class.Interfaces
+  spec.csharp:
+  - uid: SGS
+    name: SGS
+    href: SGS.html
+  - name: .
+  - uid: SGS.Class
+    name: Class
+    href: SGS.Class.html
+  - name: .
+  - uid: SGS.Class.Interfaces
+    name: Interfaces
+    href: SGS.Class.Interfaces.html
+  spec.vb:
+  - uid: SGS
+    name: SGS
+    href: SGS.html
+  - name: .
+  - uid: SGS.Class
+    name: Class
+    href: SGS.Class.html
+  - name: .
+  - uid: SGS.Class.Interfaces
+    name: Interfaces
+    href: SGS.Class.Interfaces.html

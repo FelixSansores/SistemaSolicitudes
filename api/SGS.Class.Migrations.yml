@@ -1,0 +1,58 @@
+### YamlMime:ManagedReference
+items:
+- uid: SGS.Class.Migrations
+  commentId: N:SGS.Class.Migrations
+  id: SGS.Class.Migrations
+  children:
+  - SGS.Class.Migrations.AddAssignedUserToRequest
+  - SGS.Class.Migrations.AddCategoryRequest
+  - SGS.Class.Migrations.AddCreateByUserToRequest
+  - SGS.Class.Migrations.AddFullNameUsers
+  - SGS.Class.Migrations.InitialCreateTree
+  - SGS.Class.Migrations.initialCreate
+  langs:
+  - csharp
+  - vb
+  name: SGS.Class.Migrations
+  nameWithType: SGS.Class.Migrations
+  fullName: SGS.Class.Migrations
+  type: Namespace
+  assemblies:
+  - SGS.Class
+references:
+- uid: SGS.Class.Migrations.initialCreate
+  commentId: T:SGS.Class.Migrations.initialCreate
+  href: SGS.Class.Migrations.initialCreate.html
+  name: initialCreate
+  nameWithType: initialCreate
+  fullName: SGS.Class.Migrations.initialCreate
+- uid: SGS.Class.Migrations.AddCategoryRequest
+  commentId: T:SGS.Class.Migrations.AddCategoryRequest
+  href: SGS.Class.Migrations.AddCategoryRequest.html
+  name: AddCategoryRequest
+  nameWithType: AddCategoryRequest
+  fullName: SGS.Class.Migrations.AddCategoryRequest
+- uid: SGS.Class.Migrations.AddAssignedUserToRequest
+  commentId: T:SGS.Class.Migrations.AddAssignedUserToRequest
+  href: SGS.Class.Migrations.AddAssignedUserToRequest.html
+  name: AddAssignedUserToRequest
+  nameWithType: AddAssignedUserToRequest
+  fullName: SGS.Class.Migrations.AddAssignedUserToRequest
+- uid: SGS.Class.Migrations.AddFullNameUsers
+  commentId: T:SGS.Class.Migrations.AddFullNameUsers
+  href: SGS.Class.Migrations.AddFullNameUsers.html
+  name: AddFullNameUsers
+  nameWithType: AddFullNameUsers
+  fullName: SGS.Class.Migrations.AddFullNameUsers
+- uid: SGS.Class.Migrations.AddCreateByUserToRequest
+  commentId: T:SGS.Class.Migrations.AddCreateByUserToRequest
+  href: SGS.Class.Migrations.AddCreateByUserToRequest.html
+  name: AddCreateByUserToRequest
+  nameWithType: AddCreateByUserToRequest
+  fullName: SGS.Class.Migrations.AddCreateByUserToRequest
+- uid: SGS.Class.Migrations.InitialCreateTree
+  commentId: T:SGS.Class.Migrations.InitialCreateTree
+  href: SGS.Class.Migrations.InitialCreateTree.html
+  name: InitialCreateTree
+  nameWithType: InitialCreateTree
+  fullName: SGS.Class.Migrations.InitialCreateTree

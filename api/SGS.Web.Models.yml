@@ -1,0 +1,85 @@
+### YamlMime:ManagedReference
+items:
+- uid: SGS.Web.Models
+  commentId: N:SGS.Web.Models
+  id: SGS.Web.Models
+  children:
+  - SGS.Web.Models.CreateUserViewModel
+  - SGS.Web.Models.EditUserRoleViewModel
+  - SGS.Web.Models.ErrorViewModel
+  - SGS.Web.Models.LoginViewModel
+  - SGS.Web.Models.RegisterViewModel
+  langs:
+  - csharp
+  - vb
+  name: SGS.Web.Models
+  nameWithType: SGS.Web.Models
+  fullName: SGS.Web.Models
+  type: Namespace
+  assemblies:
+  - SGS.Web
+references:
+- uid: SGS.Web.Models.CreateUserViewModel
+  commentId: T:SGS.Web.Models.CreateUserViewModel
+  parent: SGS.Web.Models
+  href: SGS.Web.Models.CreateUserViewModel.html
+  name: CreateUserViewModel
+  nameWithType: CreateUserViewModel
+  fullName: SGS.Web.Models.CreateUserViewModel
+- uid: SGS.Web.Models.EditUserRoleViewModel
+  commentId: T:SGS.Web.Models.EditUserRoleViewModel
+  parent: SGS.Web.Models
+  href: SGS.Web.Models.EditUserRoleViewModel.html
+  name: EditUserRoleViewModel
+  nameWithType: EditUserRoleViewModel
+  fullName: SGS.Web.Models.EditUserRoleViewModel
+- uid: SGS.Web.Models.ErrorViewModel
+  commentId: T:SGS.Web.Models.ErrorViewModel
+  href: SGS.Web.Models.ErrorViewModel.html
+  name: ErrorViewModel
+  nameWithType: ErrorViewModel
+  fullName: SGS.Web.Models.ErrorViewModel
+- uid: SGS.Web.Models.LoginViewModel
+  commentId: T:SGS.Web.Models.LoginViewModel
+  parent: SGS.Web.Models
+  href: SGS.Web.Models.LoginViewModel.html
+  name: LoginViewModel
+  nameWithType: LoginViewModel
+  fullName: SGS.Web.Models.LoginViewModel
+- uid: SGS.Web.Models.RegisterViewModel
+  commentId: T:SGS.Web.Models.RegisterViewModel
+  parent: SGS.Web.Models
+  href: SGS.Web.Models.RegisterViewModel.html
+  name: RegisterViewModel
+  nameWithType: RegisterViewModel
+  fullName: SGS.Web.Models.RegisterViewModel
+- uid: SGS.Web.Models
+  commentId: N:SGS.Web.Models
+  href: SGS.html
+  name: SGS.Web.Models
+  nameWithType: SGS.Web.Models
+  fullName: SGS.Web.Models
+  spec.csharp:
+  - uid: SGS
+    name: SGS
+    href: SGS.html
+  - name: .
+  - uid: SGS.Web
+    name: Web
+    href: SGS.Web.html
+  - name: .
+  - uid: SGS.Web.Models
+    name: Models
+    href: SGS.Web.Models.html
+  spec.vb:
+  - uid: SGS
+    name: SGS
+    href: SGS.html
+  - name: .
+  - uid: SGS.Web
+    name: Web
+    href: SGS.Web.html
+  - name: .
+  - uid: SGS.Web.Models
+    name: Models
+    href: SGS.Web.Models.html

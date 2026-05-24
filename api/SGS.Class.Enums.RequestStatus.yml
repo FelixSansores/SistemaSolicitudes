@@ -1,0 +1,147 @@
+### YamlMime:ManagedReference
+items:
+- uid: SGS.Class.Enums.RequestStatus
+  commentId: T:SGS.Class.Enums.RequestStatus
+  id: RequestStatus
+  parent: SGS.Class.Enums
+  children:
+  - SGS.Class.Enums.RequestStatus.Completed
+  - SGS.Class.Enums.RequestStatus.InProgress
+  - SGS.Class.Enums.RequestStatus.Pending
+  langs:
+  - csharp
+  - vb
+  name: RequestStatus
+  nameWithType: RequestStatus
+  fullName: SGS.Class.Enums.RequestStatus
+  type: Enum
+  source:
+    remote:
+      path: SGS.Class/Enums/RequestStatus.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: RequestStatus
+    path: SGS.Class/Enums/RequestStatus.cs
+    startLine: 8
+  assemblies:
+  - SGS.Class
+  namespace: SGS.Class.Enums
+  syntax:
+    content: public enum RequestStatus
+    content.vb: Public Enum RequestStatus
+- uid: SGS.Class.Enums.RequestStatus.Pending
+  commentId: F:SGS.Class.Enums.RequestStatus.Pending
+  id: Pending
+  parent: SGS.Class.Enums.RequestStatus
+  langs:
+  - csharp
+  - vb
+  name: Pending
+  nameWithType: RequestStatus.Pending
+  fullName: SGS.Class.Enums.RequestStatus.Pending
+  type: Field
+  source:
+    remote:
+      path: SGS.Class/Enums/RequestStatus.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: Pending
+    path: SGS.Class/Enums/RequestStatus.cs
+    startLine: 10
+  assemblies:
+  - SGS.Class
+  namespace: SGS.Class.Enums
+  syntax:
+    content: Pending = 0
+    return:
+      type: SGS.Class.Enums.RequestStatus
+- uid: SGS.Class.Enums.RequestStatus.InProgress
+  commentId: F:SGS.Class.Enums.RequestStatus.InProgress
+  id: InProgress
+  parent: SGS.Class.Enums.RequestStatus
+  langs:
+  - csharp
+  - vb
+  name: InProgress
+  nameWithType: RequestStatus.InProgress
+  fullName: SGS.Class.Enums.RequestStatus.InProgress
+  type: Field
+  source:
+    remote:
+      path: SGS.Class/Enums/RequestStatus.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: InProgress
+    path: SGS.Class/Enums/RequestStatus.cs
+    startLine: 11
+  assemblies:
+  - SGS.Class
+  namespace: SGS.Class.Enums
+  syntax:
+    content: InProgress = 1
+    return:
+      type: SGS.Class.Enums.RequestStatus
+- uid: SGS.Class.Enums.RequestStatus.Completed
+  commentId: F:SGS.Class.Enums.RequestStatus.Completed
+  id: Completed
+  parent: SGS.Class.Enums.RequestStatus
+  langs:
+  - csharp
+  - vb
+  name: Completed
+  nameWithType: RequestStatus.Completed
+  fullName: SGS.Class.Enums.RequestStatus.Completed
+  type: Field
+  source:
+    remote:
+      path: SGS.Class/Enums/RequestStatus.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: Completed
+    path: SGS.Class/Enums/RequestStatus.cs
+    startLine: 12
+  assemblies:
+  - SGS.Class
+  namespace: SGS.Class.Enums
+  syntax:
+    content: Completed = 2
+    return:
+      type: SGS.Class.Enums.RequestStatus
+references:
+- uid: SGS.Class.Enums
+  commentId: N:SGS.Class.Enums
+  href: SGS.html
+  name: SGS.Class.Enums
+  nameWithType: SGS.Class.Enums
+  fullName: SGS.Class.Enums
+  spec.csharp:
+  - uid: SGS
+    name: SGS
+    href: SGS.html
+  - name: .
+  - uid: SGS.Class
+    name: Class
+    href: SGS.Class.html
+  - name: .
+  - uid: SGS.Class.Enums
+    name: Enums
+    href: SGS.Class.Enums.html
+  spec.vb:
+  - uid: SGS
+    name: SGS
+    href: SGS.html
+  - name: .
+  - uid: SGS.Class
+    name: Class
+    href: SGS.Class.html
+  - name: .
+  - uid: SGS.Class.Enums
+    name: Enums
+    href: SGS.Class.Enums.html
+- uid: SGS.Class.Enums.RequestStatus
+  commentId: T:SGS.Class.Enums.RequestStatus
+  parent: SGS.Class.Enums
+  href: SGS.Class.Enums.RequestStatus.html
+  name: RequestStatus
+  nameWithType: RequestStatus
+  fullName: SGS.Class.Enums.RequestStatus

@@ -1,0 +1,56 @@
+### YamlMime:ManagedReference
+items:
+- uid: SGS.Class.Repositories
+  commentId: N:SGS.Class.Repositories
+  id: SGS.Class.Repositories
+  children:
+  - SGS.Class.Repositories.CommentRepository
+  - SGS.Class.Repositories.Repository`1
+  - SGS.Class.Repositories.RequestRepository
+  langs:
+  - csharp
+  - vb
+  name: SGS.Class.Repositories
+  nameWithType: SGS.Class.Repositories
+  fullName: SGS.Class.Repositories
+  type: Namespace
+  assemblies:
+  - SGS.Class
+references:
+- uid: SGS.Class.Repositories.CommentRepository
+  commentId: T:SGS.Class.Repositories.CommentRepository
+  href: SGS.Class.Repositories.CommentRepository.html
+  name: CommentRepository
+  nameWithType: CommentRepository
+  fullName: SGS.Class.Repositories.CommentRepository
+- uid: SGS.Class.Repositories.RequestRepository
+  commentId: T:SGS.Class.Repositories.RequestRepository
+  href: SGS.Class.Repositories.RequestRepository.html
+  name: RequestRepository
+  nameWithType: RequestRepository
+  fullName: SGS.Class.Repositories.RequestRepository
+- uid: SGS.Class.Repositories.Repository`1
+  commentId: T:SGS.Class.Repositories.Repository`1
+  href: SGS.Class.Repositories.Repository-1.html
+  name: Repository<T>
+  nameWithType: Repository<T>
+  fullName: SGS.Class.Repositories.Repository<T>
+  nameWithType.vb: Repository(Of T)
+  fullName.vb: SGS.Class.Repositories.Repository(Of T)
+  name.vb: Repository(Of T)
+  spec.csharp:
+  - uid: SGS.Class.Repositories.Repository`1
+    name: Repository
+    href: SGS.Class.Repositories.Repository-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: SGS.Class.Repositories.Repository`1
+    name: Repository
+    href: SGS.Class.Repositories.Repository-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

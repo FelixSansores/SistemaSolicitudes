@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: SGS.Web
+  commentId: N:SGS.Web
+  id: SGS.Web
+  children:
+  - SGS.Web.RoleInitializer
+  langs:
+  - csharp
+  - vb
+  name: SGS.Web
+  nameWithType: SGS.Web
+  fullName: SGS.Web
+  type: Namespace
+  assemblies:
+  - SGS.Web
+references:
+- uid: SGS.Web.RoleInitializer
+  commentId: T:SGS.Web.RoleInitializer
+  href: SGS.Web.RoleInitializer.html
+  name: RoleInitializer
+  nameWithType: RoleInitializer
+  fullName: SGS.Web.RoleInitializer

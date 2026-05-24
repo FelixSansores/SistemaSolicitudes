@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: CLASIFICADOR
+  commentId: N:CLASIFICADOR
+  id: CLASIFICADOR
+  children:
+  - CLASIFICADOR.Form1
+  langs:
+  - csharp
+  - vb
+  name: CLASIFICADOR
+  nameWithType: CLASIFICADOR
+  fullName: CLASIFICADOR
+  type: Namespace
+  assemblies:
+  - CLASIFICADOR
+references:
+- uid: CLASIFICADOR.Form1
+  commentId: T:CLASIFICADOR.Form1
+  href: CLASIFICADOR.Form1.html
+  name: Form1
+  nameWithType: Form1
+  fullName: CLASIFICADOR.Form1

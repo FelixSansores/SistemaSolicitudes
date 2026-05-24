@@ -1,0 +1,174 @@
+### YamlMime:ManagedReference
+items:
+- uid: SGS.Class.Enums.RequestPriority
+  commentId: T:SGS.Class.Enums.RequestPriority
+  id: RequestPriority
+  parent: SGS.Class.Enums
+  children:
+  - SGS.Class.Enums.RequestPriority.High
+  - SGS.Class.Enums.RequestPriority.Low
+  - SGS.Class.Enums.RequestPriority.Medium
+  - SGS.Class.Enums.RequestPriority.Urgent
+  langs:
+  - csharp
+  - vb
+  name: RequestPriority
+  nameWithType: RequestPriority
+  fullName: SGS.Class.Enums.RequestPriority
+  type: Enum
+  source:
+    remote:
+      path: SGS.Class/Enums/RequestPriority.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: RequestPriority
+    path: SGS.Class/Enums/RequestPriority.cs
+    startLine: 8
+  assemblies:
+  - SGS.Class
+  namespace: SGS.Class.Enums
+  syntax:
+    content: public enum RequestPriority
+    content.vb: Public Enum RequestPriority
+- uid: SGS.Class.Enums.RequestPriority.Low
+  commentId: F:SGS.Class.Enums.RequestPriority.Low
+  id: Low
+  parent: SGS.Class.Enums.RequestPriority
+  langs:
+  - csharp
+  - vb
+  name: Low
+  nameWithType: RequestPriority.Low
+  fullName: SGS.Class.Enums.RequestPriority.Low
+  type: Field
+  source:
+    remote:
+      path: SGS.Class/Enums/RequestPriority.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: Low
+    path: SGS.Class/Enums/RequestPriority.cs
+    startLine: 10
+  assemblies:
+  - SGS.Class
+  namespace: SGS.Class.Enums
+  syntax:
+    content: Low = 0
+    return:
+      type: SGS.Class.Enums.RequestPriority
+- uid: SGS.Class.Enums.RequestPriority.Medium
+  commentId: F:SGS.Class.Enums.RequestPriority.Medium
+  id: Medium
+  parent: SGS.Class.Enums.RequestPriority
+  langs:
+  - csharp
+  - vb
+  name: Medium
+  nameWithType: RequestPriority.Medium
+  fullName: SGS.Class.Enums.RequestPriority.Medium
+  type: Field
+  source:
+    remote:
+      path: SGS.Class/Enums/RequestPriority.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: Medium
+    path: SGS.Class/Enums/RequestPriority.cs
+    startLine: 11
+  assemblies:
+  - SGS.Class
+  namespace: SGS.Class.Enums
+  syntax:
+    content: Medium = 1
+    return:
+      type: SGS.Class.Enums.RequestPriority
+- uid: SGS.Class.Enums.RequestPriority.High
+  commentId: F:SGS.Class.Enums.RequestPriority.High
+  id: High
+  parent: SGS.Class.Enums.RequestPriority
+  langs:
+  - csharp
+  - vb
+  name: High
+  nameWithType: RequestPriority.High
+  fullName: SGS.Class.Enums.RequestPriority.High
+  type: Field
+  source:
+    remote:
+      path: SGS.Class/Enums/RequestPriority.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: High
+    path: SGS.Class/Enums/RequestPriority.cs
+    startLine: 12
+  assemblies:
+  - SGS.Class
+  namespace: SGS.Class.Enums
+  syntax:
+    content: High = 2
+    return:
+      type: SGS.Class.Enums.RequestPriority
+- uid: SGS.Class.Enums.RequestPriority.Urgent
+  commentId: F:SGS.Class.Enums.RequestPriority.Urgent
+  id: Urgent
+  parent: SGS.Class.Enums.RequestPriority
+  langs:
+  - csharp
+  - vb
+  name: Urgent
+  nameWithType: RequestPriority.Urgent
+  fullName: SGS.Class.Enums.RequestPriority.Urgent
+  type: Field
+  source:
+    remote:
+      path: SGS.Class/Enums/RequestPriority.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: Urgent
+    path: SGS.Class/Enums/RequestPriority.cs
+    startLine: 13
+  assemblies:
+  - SGS.Class
+  namespace: SGS.Class.Enums
+  syntax:
+    content: Urgent = 3
+    return:
+      type: SGS.Class.Enums.RequestPriority
+references:
+- uid: SGS.Class.Enums
+  commentId: N:SGS.Class.Enums
+  href: SGS.html
+  name: SGS.Class.Enums
+  nameWithType: SGS.Class.Enums
+  fullName: SGS.Class.Enums
+  spec.csharp:
+  - uid: SGS
+    name: SGS
+    href: SGS.html
+  - name: .
+  - uid: SGS.Class
+    name: Class
+    href: SGS.Class.html
+  - name: .
+  - uid: SGS.Class.Enums
+    name: Enums
+    href: SGS.Class.Enums.html
+  spec.vb:
+  - uid: SGS
+    name: SGS
+    href: SGS.html
+  - name: .
+  - uid: SGS.Class
+    name: Class
+    href: SGS.Class.html
+  - name: .
+  - uid: SGS.Class.Enums
+    name: Enums
+    href: SGS.Class.Enums.html
+- uid: SGS.Class.Enums.RequestPriority
+  commentId: T:SGS.Class.Enums.RequestPriority
+  parent: SGS.Class.Enums
+  href: SGS.Class.Enums.RequestPriority.html
+  name: RequestPriority
+  nameWithType: RequestPriority
+  fullName: SGS.Class.Enums.RequestPriority

@@ -1,0 +1,924 @@
+{
+  "source_base_path": "C:/Users/mirel/source/repos/SistemaSolicitudes",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "SGS.Web/wwwroot/lib/jquery-validation/LICENSE.md",
+      "output": {
+        ".html": {
+          "relative_path": "SGS.Web/wwwroot/lib/jquery-validation/LICENSE.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CLASIFICADOR.Form1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CLASIFICADOR.Form1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CLASIFICADOR.Form1",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/CLASIFICADOR.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/CLASIFICADOR.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "CLASIFICADOR",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Class.Enums.RequestPriority.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Class.Enums.RequestPriority.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Class.Enums.RequestPriority",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Class.Enums.RequestStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Class.Enums.RequestStatus.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Class.Enums.RequestStatus",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Class.Enums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Class.Enums.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Class.Enums",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Class.Interfaces.ICommentRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Class.Interfaces.ICommentRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Class.Interfaces.ICommentRepository",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Class.Interfaces.ICommentService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Class.Interfaces.ICommentService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Class.Interfaces.ICommentService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Class.Interfaces.IRepository-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Class.Interfaces.IRepository-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Class.Interfaces.IRepository<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Class.Interfaces.IRequestRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Class.Interfaces.IRequestRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Class.Interfaces.IRequestRepository",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Class.Interfaces.IRequestService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Class.Interfaces.IRequestService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Class.Interfaces.IRequestService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Class.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Class.Interfaces.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Class.Interfaces",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Class.Migrations.AddAssignedUserToRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Class.Migrations.AddAssignedUserToRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Class.Migrations.AddAssignedUserToRequest",
+      "Summary": "<p sourcefile=\"api/SGS.Class.Migrations.AddAssignedUserToRequest.yml\" sourcestartlinenumber=\"1\">A base class inherited by each EF Core migration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Class.Migrations.AddCategoryRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Class.Migrations.AddCategoryRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Class.Migrations.AddCategoryRequest",
+      "Summary": "<p sourcefile=\"api/SGS.Class.Migrations.AddCategoryRequest.yml\" sourcestartlinenumber=\"1\">A base class inherited by each EF Core migration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Class.Migrations.AddCreateByUserToRequest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Class.Migrations.AddCreateByUserToRequest.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Class.Migrations.AddCreateByUserToRequest",
+      "Summary": "<p sourcefile=\"api/SGS.Class.Migrations.AddCreateByUserToRequest.yml\" sourcestartlinenumber=\"1\">A base class inherited by each EF Core migration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Class.Migrations.AddFullNameUsers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Class.Migrations.AddFullNameUsers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Class.Migrations.AddFullNameUsers",
+      "Summary": "<p sourcefile=\"api/SGS.Class.Migrations.AddFullNameUsers.yml\" sourcestartlinenumber=\"1\">A base class inherited by each EF Core migration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Class.Migrations.InitialCreateTree.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Class.Migrations.InitialCreateTree.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Class.Migrations.InitialCreateTree",
+      "Summary": "<p sourcefile=\"api/SGS.Class.Migrations.InitialCreateTree.yml\" sourcestartlinenumber=\"1\">A base class inherited by each EF Core migration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Class.Migrations.initialCreate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Class.Migrations.initialCreate.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Class.Migrations.initialCreate",
+      "Summary": "<p sourcefile=\"api/SGS.Class.Migrations.initialCreate.yml\" sourcestartlinenumber=\"1\">A base class inherited by each EF Core migration.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Class.Migrations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Class.Migrations.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Class.Migrations",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Class.Models.ApplicationUser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Class.Models.ApplicationUser.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Class.Models.ApplicationUser",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Class.Models.CategoryModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Class.Models.CategoryModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Class.Models.CategoryModel",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Class.Models.CommentModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Class.Models.CommentModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Class.Models.CommentModel",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Class.Models.IEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Class.Models.IEntity.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Class.Models.IEntity",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Class.Models.PriorityModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Class.Models.PriorityModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Class.Models.PriorityModel",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Class.Models.RequestModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Class.Models.RequestModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Class.Models.RequestModel",
+      "Summary": "<p sourcefile=\"api/SGS.Class.Models.RequestModel.yml\" sourcestartlinenumber=\"1\">Representa una solicitud dentro del sistema de gestión de solicitudes.\nContiene información general, estado, prioridad, categoría y usuarios relacionados.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Class.Models.StatusModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Class.Models.StatusModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Class.Models.StatusModel",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Class.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Class.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Class.Models",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Class.Repositories.CommentRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Class.Repositories.CommentRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Class.Repositories.CommentRepository",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Class.Repositories.Repository-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Class.Repositories.Repository-1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Class.Repositories.Repository<T>",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Class.Repositories.RequestRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Class.Repositories.RequestRepository.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Class.Repositories.RequestRepository",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Class.Repositories.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Class.Repositories.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Class.Repositories",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Class.SGSDb.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Class.SGSDb.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Class.SGSDb",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Class.Services.CommentService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Class.Services.CommentService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Class.Services.CommentService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Class.Services.RequestService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Class.Services.RequestService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Class.Services.RequestService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Class.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Class.Services.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Class.Services",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Class.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Class.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Class",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Controllers.HomeController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Controllers.HomeController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Controllers.HomeController",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Controllers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Controllers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Controllers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Models.ErrorViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Models.ErrorViewModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Models.ErrorViewModel",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Models",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Web.Controllers.AdminController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Web.Controllers.AdminController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Web.Controllers.AdminController",
+      "Summary": "<p sourcefile=\"api/SGS.Web.Controllers.AdminController.yml\" sourcestartlinenumber=\"1\">Controlador encargado de la administración general del sistema.\nPermite visualizar estadísticas e indicadores principales.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Web.Controllers.AuthController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Web.Controllers.AuthController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Web.Controllers.AuthController",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Web.Controllers.HomeController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Web.Controllers.HomeController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Web.Controllers.HomeController",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Web.Controllers.RequestsController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Web.Controllers.RequestsController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Web.Controllers.RequestsController",
+      "Summary": "<p sourcefile=\"api/SGS.Web.Controllers.RequestsController.yml\" sourcestartlinenumber=\"1\">Controlador encargado de gestionar las solicitudes del sistema.\nPermite crear, consultar, editar, eliminar y comentar solicitudes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Web.Controllers.UserManagementController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Web.Controllers.UserManagementController.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Web.Controllers.UserManagementController",
+      "Summary": "<p sourcefile=\"api/SGS.Web.Controllers.UserManagementController.yml\" sourcestartlinenumber=\"1\">Controlador encargado de la administración de usuarios y roles.\nPermite crear usuarios, visualizar usuarios registrados y modificar roles.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Web.Controllers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Web.Controllers.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Web.Controllers",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Web.Models.CreateUserViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Web.Models.CreateUserViewModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Web.Models.CreateUserViewModel",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Web.Models.EditUserRoleViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Web.Models.EditUserRoleViewModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Web.Models.EditUserRoleViewModel",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Web.Models.ErrorViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Web.Models.ErrorViewModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Web.Models.ErrorViewModel",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Web.Models.LoginViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Web.Models.LoginViewModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Web.Models.LoginViewModel",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Web.Models.RegisterViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Web.Models.RegisterViewModel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Web.Models.RegisterViewModel",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Web.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Web.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Web.Models",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Web.RoleInitializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Web.RoleInitializer.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Web.RoleInitializer",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SGS.Web.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SGS.Web.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SGS.Web",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WindowsFormsApp1.Form1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WindowsFormsApp1.Form1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WindowsFormsApp1.Form1",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WindowsFormsApp1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WindowsFormsApp1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WindowsFormsApp1",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WindowsFormsApp2.Form1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WindowsFormsApp2.Form1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WindowsFormsApp2.Form1",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WindowsFormsApp2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WindowsFormsApp2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WindowsFormsApp2",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WindowsFormsApp3.Form1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WindowsFormsApp3.Form1.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WindowsFormsApp3.Form1",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/WindowsFormsApp3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/WindowsFormsApp3.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "WindowsFormsApp3",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

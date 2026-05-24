@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: SGS.Class.Services
+  commentId: N:SGS.Class.Services
+  id: SGS.Class.Services
+  children:
+  - SGS.Class.Services.CommentService
+  - SGS.Class.Services.RequestService
+  langs:
+  - csharp
+  - vb
+  name: SGS.Class.Services
+  nameWithType: SGS.Class.Services
+  fullName: SGS.Class.Services
+  type: Namespace
+  assemblies:
+  - SGS.Class
+references:
+- uid: SGS.Class.Services.CommentService
+  commentId: T:SGS.Class.Services.CommentService
+  href: SGS.Class.Services.CommentService.html
+  name: CommentService
+  nameWithType: CommentService
+  fullName: SGS.Class.Services.CommentService
+- uid: SGS.Class.Services.RequestService
+  commentId: T:SGS.Class.Services.RequestService
+  href: SGS.Class.Services.RequestService.html
+  name: RequestService
+  nameWithType: RequestService
+  fullName: SGS.Class.Services.RequestService

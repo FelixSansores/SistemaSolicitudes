@@ -1,0 +1,196 @@
+### YamlMime:TableOfContent
+items:
+- uid: CLASIFICADOR
+  name: CLASIFICADOR
+  type: Namespace
+  items:
+  - uid: CLASIFICADOR.Form1
+    name: Form1
+    type: Class
+- uid: SGS.Class
+  name: SGS.Class
+  type: Namespace
+  items:
+  - uid: SGS.Class.SGSDb
+    name: SGSDb
+    type: Class
+- uid: SGS.Class.Enums
+  name: SGS.Class.Enums
+  type: Namespace
+  items:
+  - uid: SGS.Class.Enums.RequestPriority
+    name: RequestPriority
+    type: Enum
+  - uid: SGS.Class.Enums.RequestStatus
+    name: RequestStatus
+    type: Enum
+- uid: SGS.Class.Interfaces
+  name: SGS.Class.Interfaces
+  type: Namespace
+  items:
+  - uid: SGS.Class.Interfaces.ICommentRepository
+    name: ICommentRepository
+    type: Interface
+  - uid: SGS.Class.Interfaces.ICommentService
+    name: ICommentService
+    type: Interface
+  - uid: SGS.Class.Interfaces.IRepository`1
+    name: IRepository<T>
+    type: Interface
+  - uid: SGS.Class.Interfaces.IRequestRepository
+    name: IRequestRepository
+    type: Interface
+  - uid: SGS.Class.Interfaces.IRequestService
+    name: IRequestService
+    type: Interface
+- uid: SGS.Class.Migrations
+  name: SGS.Class.Migrations
+  type: Namespace
+  items:
+  - uid: SGS.Class.Migrations.AddAssignedUserToRequest
+    name: AddAssignedUserToRequest
+    type: Class
+  - uid: SGS.Class.Migrations.AddCategoryRequest
+    name: AddCategoryRequest
+    type: Class
+  - uid: SGS.Class.Migrations.AddCreateByUserToRequest
+    name: AddCreateByUserToRequest
+    type: Class
+  - uid: SGS.Class.Migrations.AddFullNameUsers
+    name: AddFullNameUsers
+    type: Class
+  - uid: SGS.Class.Migrations.InitialCreateTree
+    name: InitialCreateTree
+    type: Class
+  - uid: SGS.Class.Migrations.initialCreate
+    name: initialCreate
+    type: Class
+- uid: SGS.Class.Models
+  name: SGS.Class.Models
+  type: Namespace
+  items:
+  - uid: SGS.Class.Models.ApplicationUser
+    name: ApplicationUser
+    type: Class
+  - uid: SGS.Class.Models.CategoryModel
+    name: CategoryModel
+    type: Class
+  - uid: SGS.Class.Models.CommentModel
+    name: CommentModel
+    type: Class
+  - uid: SGS.Class.Models.IEntity
+    name: IEntity
+    type: Interface
+  - uid: SGS.Class.Models.PriorityModel
+    name: PriorityModel
+    type: Class
+  - uid: SGS.Class.Models.RequestModel
+    name: RequestModel
+    type: Class
+  - uid: SGS.Class.Models.StatusModel
+    name: StatusModel
+    type: Class
+- uid: SGS.Class.Repositories
+  name: SGS.Class.Repositories
+  type: Namespace
+  items:
+  - uid: SGS.Class.Repositories.CommentRepository
+    name: CommentRepository
+    type: Class
+  - uid: SGS.Class.Repositories.Repository`1
+    name: Repository<T>
+    type: Class
+  - uid: SGS.Class.Repositories.RequestRepository
+    name: RequestRepository
+    type: Class
+- uid: SGS.Class.Services
+  name: SGS.Class.Services
+  type: Namespace
+  items:
+  - uid: SGS.Class.Services.CommentService
+    name: CommentService
+    type: Class
+  - uid: SGS.Class.Services.RequestService
+    name: RequestService
+    type: Class
+- uid: SGS.Controllers
+  name: SGS.Controllers
+  type: Namespace
+  items:
+  - uid: SGS.Controllers.HomeController
+    name: HomeController
+    type: Class
+- uid: SGS.Models
+  name: SGS.Models
+  type: Namespace
+  items:
+  - uid: SGS.Models.ErrorViewModel
+    name: ErrorViewModel
+    type: Class
+- uid: SGS.Web
+  name: SGS.Web
+  type: Namespace
+  items:
+  - uid: SGS.Web.RoleInitializer
+    name: RoleInitializer
+    type: Class
+- uid: SGS.Web.Controllers
+  name: SGS.Web.Controllers
+  type: Namespace
+  items:
+  - uid: SGS.Web.Controllers.AdminController
+    name: AdminController
+    type: Class
+  - uid: SGS.Web.Controllers.AuthController
+    name: AuthController
+    type: Class
+  - uid: SGS.Web.Controllers.HomeController
+    name: HomeController
+    type: Class
+  - uid: SGS.Web.Controllers.RequestsController
+    name: RequestsController
+    type: Class
+  - uid: SGS.Web.Controllers.UserManagementController
+    name: UserManagementController
+    type: Class
+- uid: SGS.Web.Models
+  name: SGS.Web.Models
+  type: Namespace
+  items:
+  - uid: SGS.Web.Models.CreateUserViewModel
+    name: CreateUserViewModel
+    type: Class
+  - uid: SGS.Web.Models.EditUserRoleViewModel
+    name: EditUserRoleViewModel
+    type: Class
+  - uid: SGS.Web.Models.ErrorViewModel
+    name: ErrorViewModel
+    type: Class
+  - uid: SGS.Web.Models.LoginViewModel
+    name: LoginViewModel
+    type: Class
+  - uid: SGS.Web.Models.RegisterViewModel
+    name: RegisterViewModel
+    type: Class
+- uid: WindowsFormsApp1
+  name: WindowsFormsApp1
+  type: Namespace
+  items:
+  - uid: WindowsFormsApp1.Form1
+    name: Form1
+    type: Class
+- uid: WindowsFormsApp2
+  name: WindowsFormsApp2
+  type: Namespace
+  items:
+  - uid: WindowsFormsApp2.Form1
+    name: Form1
+    type: Class
+- uid: WindowsFormsApp3
+  name: WindowsFormsApp3
+  type: Namespace
+  items:
+  - uid: WindowsFormsApp3.Form1
+    name: Form1
+    type: Class
+memberLayout: SamePage

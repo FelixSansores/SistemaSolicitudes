@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: SGS.Class.Enums
+  commentId: N:SGS.Class.Enums
+  id: SGS.Class.Enums
+  children:
+  - SGS.Class.Enums.RequestPriority
+  - SGS.Class.Enums.RequestStatus
+  langs:
+  - csharp
+  - vb
+  name: SGS.Class.Enums
+  nameWithType: SGS.Class.Enums
+  fullName: SGS.Class.Enums
+  type: Namespace
+  assemblies:
+  - SGS.Class
+references:
+- uid: SGS.Class.Enums.RequestPriority
+  commentId: T:SGS.Class.Enums.RequestPriority
+  parent: SGS.Class.Enums
+  href: SGS.Class.Enums.RequestPriority.html
+  name: RequestPriority
+  nameWithType: RequestPriority
+  fullName: SGS.Class.Enums.RequestPriority
+- uid: SGS.Class.Enums.RequestStatus
+  commentId: T:SGS.Class.Enums.RequestStatus
+  parent: SGS.Class.Enums
+  href: SGS.Class.Enums.RequestStatus.html
+  name: RequestStatus
+  nameWithType: RequestStatus
+  fullName: SGS.Class.Enums.RequestStatus
+- uid: SGS.Class.Enums
+  commentId: N:SGS.Class.Enums
+  href: SGS.html
+  name: SGS.Class.Enums
+  nameWithType: SGS.Class.Enums
+  fullName: SGS.Class.Enums
+  spec.csharp:
+  - uid: SGS
+    name: SGS
+    href: SGS.html
+  - name: .
+  - uid: SGS.Class
+    name: Class
+    href: SGS.Class.html
+  - name: .
+  - uid: SGS.Class.Enums
+    name: Enums
+    href: SGS.Class.Enums.html
+  spec.vb:
+  - uid: SGS
+    name: SGS
+    href: SGS.html
+  - name: .
+  - uid: SGS.Class
+    name: Class
+    href: SGS.Class.html
+  - name: .
+  - uid: SGS.Class.Enums
+    name: Enums
+    href: SGS.Class.Enums.html

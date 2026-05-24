@@ -1,0 +1,100 @@
+### YamlMime:ManagedReference
+items:
+- uid: SGS.Class.Models
+  commentId: N:SGS.Class.Models
+  id: SGS.Class.Models
+  children:
+  - SGS.Class.Models.ApplicationUser
+  - SGS.Class.Models.CategoryModel
+  - SGS.Class.Models.CommentModel
+  - SGS.Class.Models.IEntity
+  - SGS.Class.Models.PriorityModel
+  - SGS.Class.Models.RequestModel
+  - SGS.Class.Models.StatusModel
+  langs:
+  - csharp
+  - vb
+  name: SGS.Class.Models
+  nameWithType: SGS.Class.Models
+  fullName: SGS.Class.Models
+  type: Namespace
+  assemblies:
+  - SGS.Class
+references:
+- uid: SGS.Class.Models.ApplicationUser
+  commentId: T:SGS.Class.Models.ApplicationUser
+  parent: SGS.Class.Models
+  href: SGS.Class.Models.ApplicationUser.html
+  name: ApplicationUser
+  nameWithType: ApplicationUser
+  fullName: SGS.Class.Models.ApplicationUser
+- uid: SGS.Class.Models.CategoryModel
+  commentId: T:SGS.Class.Models.CategoryModel
+  parent: SGS.Class.Models
+  href: SGS.Class.Models.CategoryModel.html
+  name: CategoryModel
+  nameWithType: CategoryModel
+  fullName: SGS.Class.Models.CategoryModel
+- uid: SGS.Class.Models.CommentModel
+  commentId: T:SGS.Class.Models.CommentModel
+  parent: SGS.Class.Models
+  href: SGS.Class.Models.CommentModel.html
+  name: CommentModel
+  nameWithType: CommentModel
+  fullName: SGS.Class.Models.CommentModel
+- uid: SGS.Class.Models.IEntity
+  commentId: T:SGS.Class.Models.IEntity
+  parent: SGS.Class.Models
+  href: SGS.Class.Models.IEntity.html
+  name: IEntity
+  nameWithType: IEntity
+  fullName: SGS.Class.Models.IEntity
+- uid: SGS.Class.Models.PriorityModel
+  commentId: T:SGS.Class.Models.PriorityModel
+  href: SGS.Class.Models.PriorityModel.html
+  name: PriorityModel
+  nameWithType: PriorityModel
+  fullName: SGS.Class.Models.PriorityModel
+- uid: SGS.Class.Models.RequestModel
+  commentId: T:SGS.Class.Models.RequestModel
+  parent: SGS.Class.Models
+  href: SGS.Class.Models.RequestModel.html
+  name: RequestModel
+  nameWithType: RequestModel
+  fullName: SGS.Class.Models.RequestModel
+- uid: SGS.Class.Models.StatusModel
+  commentId: T:SGS.Class.Models.StatusModel
+  href: SGS.Class.Models.StatusModel.html
+  name: StatusModel
+  nameWithType: StatusModel
+  fullName: SGS.Class.Models.StatusModel
+- uid: SGS.Class.Models
+  commentId: N:SGS.Class.Models
+  href: SGS.html
+  name: SGS.Class.Models
+  nameWithType: SGS.Class.Models
+  fullName: SGS.Class.Models
+  spec.csharp:
+  - uid: SGS
+    name: SGS
+    href: SGS.html
+  - name: .
+  - uid: SGS.Class
+    name: Class
+    href: SGS.Class.html
+  - name: .
+  - uid: SGS.Class.Models
+    name: Models
+    href: SGS.Class.Models.html
+  spec.vb:
+  - uid: SGS
+    name: SGS
+    href: SGS.html
+  - name: .
+  - uid: SGS.Class
+    name: Class
+    href: SGS.Class.html
+  - name: .
+  - uid: SGS.Class.Models
+    name: Models
+    href: SGS.Class.Models.html

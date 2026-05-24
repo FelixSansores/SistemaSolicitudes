@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: SGS.Class
+  commentId: N:SGS.Class
+  id: SGS.Class
+  children:
+  - SGS.Class.SGSDb
+  langs:
+  - csharp
+  - vb
+  name: SGS.Class
+  nameWithType: SGS.Class
+  fullName: SGS.Class
+  type: Namespace
+  assemblies:
+  - SGS.Class
+references:
+- uid: SGS.Class.SGSDb
+  commentId: T:SGS.Class.SGSDb
+  parent: SGS.Class
+  href: SGS.Class.SGSDb.html
+  name: SGSDb
+  nameWithType: SGSDb
+  fullName: SGS.Class.SGSDb
+- uid: SGS.Class
+  commentId: N:SGS.Class
+  href: SGS.html
+  name: SGS.Class
+  nameWithType: SGS.Class
+  fullName: SGS.Class
+  spec.csharp:
+  - uid: SGS
+    name: SGS
+    href: SGS.html
+  - name: .
+  - uid: SGS.Class
+    name: Class
+    href: SGS.Class.html
+  spec.vb:
+  - uid: SGS
+    name: SGS
+    href: SGS.html
+  - name: .
+  - uid: SGS.Class
+    name: Class
+    href: SGS.Class.html

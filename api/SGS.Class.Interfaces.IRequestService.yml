@@ -1,0 +1,648 @@
+### YamlMime:ManagedReference
+items:
+- uid: SGS.Class.Interfaces.IRequestService
+  commentId: T:SGS.Class.Interfaces.IRequestService
+  id: IRequestService
+  parent: SGS.Class.Interfaces
+  children:
+  - SGS.Class.Interfaces.IRequestService.CreateAsync(SGS.Class.Models.RequestModel)
+  - SGS.Class.Interfaces.IRequestService.DeleteAsync(System.Int32)
+  - SGS.Class.Interfaces.IRequestService.GetAllAsync
+  - SGS.Class.Interfaces.IRequestService.GetByIdAsync(System.Int32)
+  - SGS.Class.Interfaces.IRequestService.GetFilteredAsync(System.Nullable{SGS.Class.Enums.RequestStatus},System.Nullable{SGS.Class.Enums.RequestPriority},System.Nullable{System.Int32},System.String)
+  - SGS.Class.Interfaces.IRequestService.GetWithCommentsAsync(System.Int32)
+  - SGS.Class.Interfaces.IRequestService.UpdateAsync(SGS.Class.Models.RequestModel)
+  langs:
+  - csharp
+  - vb
+  name: IRequestService
+  nameWithType: IRequestService
+  fullName: SGS.Class.Interfaces.IRequestService
+  type: Interface
+  source:
+    remote:
+      path: SGS.Class/Interfaces/IRequestService.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: IRequestService
+    path: SGS.Class/Interfaces/IRequestService.cs
+    startLine: 10
+  assemblies:
+  - SGS.Class
+  namespace: SGS.Class.Interfaces
+  syntax:
+    content: public interface IRequestService
+    content.vb: Public Interface IRequestService
+  derivedClasses:
+  - SGS.Class.Services.RequestService
+- uid: SGS.Class.Interfaces.IRequestService.GetAllAsync
+  commentId: M:SGS.Class.Interfaces.IRequestService.GetAllAsync
+  id: GetAllAsync
+  parent: SGS.Class.Interfaces.IRequestService
+  langs:
+  - csharp
+  - vb
+  name: GetAllAsync()
+  nameWithType: IRequestService.GetAllAsync()
+  fullName: SGS.Class.Interfaces.IRequestService.GetAllAsync()
+  type: Method
+  source:
+    remote:
+      path: SGS.Class/Interfaces/IRequestService.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: GetAllAsync
+    path: SGS.Class/Interfaces/IRequestService.cs
+    startLine: 12
+  assemblies:
+  - SGS.Class
+  namespace: SGS.Class.Interfaces
+  syntax:
+    content: Task<List<RequestModel>> GetAllAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{SGS.Class.Models.RequestModel}}
+    content.vb: Function GetAllAsync() As Task(Of List(Of RequestModel))
+  overload: SGS.Class.Interfaces.IRequestService.GetAllAsync*
+- uid: SGS.Class.Interfaces.IRequestService.GetByIdAsync(System.Int32)
+  commentId: M:SGS.Class.Interfaces.IRequestService.GetByIdAsync(System.Int32)
+  id: GetByIdAsync(System.Int32)
+  parent: SGS.Class.Interfaces.IRequestService
+  langs:
+  - csharp
+  - vb
+  name: GetByIdAsync(int)
+  nameWithType: IRequestService.GetByIdAsync(int)
+  fullName: SGS.Class.Interfaces.IRequestService.GetByIdAsync(int)
+  type: Method
+  source:
+    remote:
+      path: SGS.Class/Interfaces/IRequestService.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: GetByIdAsync
+    path: SGS.Class/Interfaces/IRequestService.cs
+    startLine: 14
+  assemblies:
+  - SGS.Class
+  namespace: SGS.Class.Interfaces
+  syntax:
+    content: Task<RequestModel?> GetByIdAsync(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task{SGS.Class.Models.RequestModel}
+    content.vb: Function GetByIdAsync(id As Integer) As Task(Of RequestModel)
+  overload: SGS.Class.Interfaces.IRequestService.GetByIdAsync*
+  nameWithType.vb: IRequestService.GetByIdAsync(Integer)
+  fullName.vb: SGS.Class.Interfaces.IRequestService.GetByIdAsync(Integer)
+  name.vb: GetByIdAsync(Integer)
+- uid: SGS.Class.Interfaces.IRequestService.CreateAsync(SGS.Class.Models.RequestModel)
+  commentId: M:SGS.Class.Interfaces.IRequestService.CreateAsync(SGS.Class.Models.RequestModel)
+  id: CreateAsync(SGS.Class.Models.RequestModel)
+  parent: SGS.Class.Interfaces.IRequestService
+  langs:
+  - csharp
+  - vb
+  name: CreateAsync(RequestModel)
+  nameWithType: IRequestService.CreateAsync(RequestModel)
+  fullName: SGS.Class.Interfaces.IRequestService.CreateAsync(SGS.Class.Models.RequestModel)
+  type: Method
+  source:
+    remote:
+      path: SGS.Class/Interfaces/IRequestService.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: CreateAsync
+    path: SGS.Class/Interfaces/IRequestService.cs
+    startLine: 16
+  assemblies:
+  - SGS.Class
+  namespace: SGS.Class.Interfaces
+  syntax:
+    content: Task CreateAsync(RequestModel request)
+    parameters:
+    - id: request
+      type: SGS.Class.Models.RequestModel
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function CreateAsync(request As RequestModel) As Task
+  overload: SGS.Class.Interfaces.IRequestService.CreateAsync*
+- uid: SGS.Class.Interfaces.IRequestService.UpdateAsync(SGS.Class.Models.RequestModel)
+  commentId: M:SGS.Class.Interfaces.IRequestService.UpdateAsync(SGS.Class.Models.RequestModel)
+  id: UpdateAsync(SGS.Class.Models.RequestModel)
+  parent: SGS.Class.Interfaces.IRequestService
+  langs:
+  - csharp
+  - vb
+  name: UpdateAsync(RequestModel)
+  nameWithType: IRequestService.UpdateAsync(RequestModel)
+  fullName: SGS.Class.Interfaces.IRequestService.UpdateAsync(SGS.Class.Models.RequestModel)
+  type: Method
+  source:
+    remote:
+      path: SGS.Class/Interfaces/IRequestService.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: UpdateAsync
+    path: SGS.Class/Interfaces/IRequestService.cs
+    startLine: 18
+  assemblies:
+  - SGS.Class
+  namespace: SGS.Class.Interfaces
+  syntax:
+    content: Task UpdateAsync(RequestModel request)
+    parameters:
+    - id: request
+      type: SGS.Class.Models.RequestModel
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function UpdateAsync(request As RequestModel) As Task
+  overload: SGS.Class.Interfaces.IRequestService.UpdateAsync*
+- uid: SGS.Class.Interfaces.IRequestService.DeleteAsync(System.Int32)
+  commentId: M:SGS.Class.Interfaces.IRequestService.DeleteAsync(System.Int32)
+  id: DeleteAsync(System.Int32)
+  parent: SGS.Class.Interfaces.IRequestService
+  langs:
+  - csharp
+  - vb
+  name: DeleteAsync(int)
+  nameWithType: IRequestService.DeleteAsync(int)
+  fullName: SGS.Class.Interfaces.IRequestService.DeleteAsync(int)
+  type: Method
+  source:
+    remote:
+      path: SGS.Class/Interfaces/IRequestService.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: DeleteAsync
+    path: SGS.Class/Interfaces/IRequestService.cs
+    startLine: 20
+  assemblies:
+  - SGS.Class
+  namespace: SGS.Class.Interfaces
+  syntax:
+    content: Task DeleteAsync(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function DeleteAsync(id As Integer) As Task
+  overload: SGS.Class.Interfaces.IRequestService.DeleteAsync*
+  nameWithType.vb: IRequestService.DeleteAsync(Integer)
+  fullName.vb: SGS.Class.Interfaces.IRequestService.DeleteAsync(Integer)
+  name.vb: DeleteAsync(Integer)
+- uid: SGS.Class.Interfaces.IRequestService.GetWithCommentsAsync(System.Int32)
+  commentId: M:SGS.Class.Interfaces.IRequestService.GetWithCommentsAsync(System.Int32)
+  id: GetWithCommentsAsync(System.Int32)
+  parent: SGS.Class.Interfaces.IRequestService
+  langs:
+  - csharp
+  - vb
+  name: GetWithCommentsAsync(int)
+  nameWithType: IRequestService.GetWithCommentsAsync(int)
+  fullName: SGS.Class.Interfaces.IRequestService.GetWithCommentsAsync(int)
+  type: Method
+  source:
+    remote:
+      path: SGS.Class/Interfaces/IRequestService.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: GetWithCommentsAsync
+    path: SGS.Class/Interfaces/IRequestService.cs
+    startLine: 21
+  assemblies:
+  - SGS.Class
+  namespace: SGS.Class.Interfaces
+  syntax:
+    content: Task<RequestModel?> GetWithCommentsAsync(int id)
+    parameters:
+    - id: id
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task{SGS.Class.Models.RequestModel}
+    content.vb: Function GetWithCommentsAsync(id As Integer) As Task(Of RequestModel)
+  overload: SGS.Class.Interfaces.IRequestService.GetWithCommentsAsync*
+  nameWithType.vb: IRequestService.GetWithCommentsAsync(Integer)
+  fullName.vb: SGS.Class.Interfaces.IRequestService.GetWithCommentsAsync(Integer)
+  name.vb: GetWithCommentsAsync(Integer)
+- uid: SGS.Class.Interfaces.IRequestService.GetFilteredAsync(System.Nullable{SGS.Class.Enums.RequestStatus},System.Nullable{SGS.Class.Enums.RequestPriority},System.Nullable{System.Int32},System.String)
+  commentId: M:SGS.Class.Interfaces.IRequestService.GetFilteredAsync(System.Nullable{SGS.Class.Enums.RequestStatus},System.Nullable{SGS.Class.Enums.RequestPriority},System.Nullable{System.Int32},System.String)
+  id: GetFilteredAsync(System.Nullable{SGS.Class.Enums.RequestStatus},System.Nullable{SGS.Class.Enums.RequestPriority},System.Nullable{System.Int32},System.String)
+  parent: SGS.Class.Interfaces.IRequestService
+  langs:
+  - csharp
+  - vb
+  name: GetFilteredAsync(RequestStatus?, RequestPriority?, int?, string?)
+  nameWithType: IRequestService.GetFilteredAsync(RequestStatus?, RequestPriority?, int?, string?)
+  fullName: SGS.Class.Interfaces.IRequestService.GetFilteredAsync(SGS.Class.Enums.RequestStatus?, SGS.Class.Enums.RequestPriority?, int?, string?)
+  type: Method
+  source:
+    remote:
+      path: SGS.Class/Interfaces/IRequestService.cs
+      branch: master
+      repo: https://github.com/FelixSansores/SistemaSolicitudes.git
+    id: GetFilteredAsync
+    path: SGS.Class/Interfaces/IRequestService.cs
+    startLine: 22
+  assemblies:
+  - SGS.Class
+  namespace: SGS.Class.Interfaces
+  syntax:
+    content: Task<List<RequestModel>> GetFilteredAsync(RequestStatus? status, RequestPriority? priority, int? categoryId, string? assignedUserId)
+    parameters:
+    - id: status
+      type: System.Nullable{SGS.Class.Enums.RequestStatus}
+    - id: priority
+      type: System.Nullable{SGS.Class.Enums.RequestPriority}
+    - id: categoryId
+      type: System.Nullable{System.Int32}
+    - id: assignedUserId
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.List{SGS.Class.Models.RequestModel}}
+    content.vb: Function GetFilteredAsync(status As RequestStatus?, priority As RequestPriority?, categoryId As Integer?, assignedUserId As String) As Task(Of List(Of RequestModel))
+  overload: SGS.Class.Interfaces.IRequestService.GetFilteredAsync*
+  nameWithType.vb: IRequestService.GetFilteredAsync(RequestStatus?, RequestPriority?, Integer?, String)
+  fullName.vb: SGS.Class.Interfaces.IRequestService.GetFilteredAsync(SGS.Class.Enums.RequestStatus?, SGS.Class.Enums.RequestPriority?, Integer?, String)
+  name.vb: GetFilteredAsync(RequestStatus?, RequestPriority?, Integer?, String)
+references:
+- uid: SGS.Class.Interfaces
+  commentId: N:SGS.Class.Interfaces
+  href: SGS.html
+  name: SGS.Class.Interfaces
+  nameWithType: SGS.Class.Interfaces
+  fullName: SGS.Class.Interfaces
+  spec.csharp:
+  - uid: SGS
+    name: SGS
+    href: SGS.html
+  - name: .
+  - uid: SGS.Class
+    name: Class
+    href: SGS.Class.html
+  - name: .
+  - uid: SGS.Class.Interfaces
+    name: Interfaces
+    href: SGS.Class.Interfaces.html
+  spec.vb:
+  - uid: SGS
+    name: SGS
+    href: SGS.html
+  - name: .
+  - uid: SGS.Class
+    name: Class
+    href: SGS.Class.html
+  - name: .
+  - uid: SGS.Class.Interfaces
+    name: Interfaces
+    href: SGS.Class.Interfaces.html
+- uid: SGS.Class.Interfaces.IRequestService.GetAllAsync*
+  commentId: Overload:SGS.Class.Interfaces.IRequestService.GetAllAsync
+  href: SGS.Class.Interfaces.IRequestService.html#SGS_Class_Interfaces_IRequestService_GetAllAsync
+  name: GetAllAsync
+  nameWithType: IRequestService.GetAllAsync
+  fullName: SGS.Class.Interfaces.IRequestService.GetAllAsync
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.List{SGS.Class.Models.RequestModel}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.List{SGS.Class.Models.RequestModel}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<List<RequestModel>>
+  nameWithType: Task<List<RequestModel>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.List<SGS.Class.Models.RequestModel>>
+  nameWithType.vb: Task(Of List(Of RequestModel))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.List(Of SGS.Class.Models.RequestModel))
+  name.vb: Task(Of List(Of RequestModel))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: SGS.Class.Models.RequestModel
+    name: RequestModel
+    href: SGS.Class.Models.RequestModel.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SGS.Class.Models.RequestModel
+    name: RequestModel
+    href: SGS.Class.Models.RequestModel.html
+  - name: )
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: SGS.Class.Interfaces.IRequestService.GetByIdAsync*
+  commentId: Overload:SGS.Class.Interfaces.IRequestService.GetByIdAsync
+  href: SGS.Class.Interfaces.IRequestService.html#SGS_Class_Interfaces_IRequestService_GetByIdAsync_System_Int32_
+  name: GetByIdAsync
+  nameWithType: IRequestService.GetByIdAsync
+  fullName: SGS.Class.Interfaces.IRequestService.GetByIdAsync
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Threading.Tasks.Task{SGS.Class.Models.RequestModel}
+  commentId: T:System.Threading.Tasks.Task{SGS.Class.Models.RequestModel}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<RequestModel>
+  nameWithType: Task<RequestModel>
+  fullName: System.Threading.Tasks.Task<SGS.Class.Models.RequestModel>
+  nameWithType.vb: Task(Of RequestModel)
+  fullName.vb: System.Threading.Tasks.Task(Of SGS.Class.Models.RequestModel)
+  name.vb: Task(Of RequestModel)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: SGS.Class.Models.RequestModel
+    name: RequestModel
+    href: SGS.Class.Models.RequestModel.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SGS.Class.Models.RequestModel
+    name: RequestModel
+    href: SGS.Class.Models.RequestModel.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SGS.Class.Interfaces.IRequestService.CreateAsync*
+  commentId: Overload:SGS.Class.Interfaces.IRequestService.CreateAsync
+  href: SGS.Class.Interfaces.IRequestService.html#SGS_Class_Interfaces_IRequestService_CreateAsync_SGS_Class_Models_RequestModel_
+  name: CreateAsync
+  nameWithType: IRequestService.CreateAsync
+  fullName: SGS.Class.Interfaces.IRequestService.CreateAsync
+- uid: SGS.Class.Models.RequestModel
+  commentId: T:SGS.Class.Models.RequestModel
+  parent: SGS.Class.Models
+  href: SGS.Class.Models.RequestModel.html
+  name: RequestModel
+  nameWithType: RequestModel
+  fullName: SGS.Class.Models.RequestModel
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: SGS.Class.Models
+  commentId: N:SGS.Class.Models
+  href: SGS.html
+  name: SGS.Class.Models
+  nameWithType: SGS.Class.Models
+  fullName: SGS.Class.Models
+  spec.csharp:
+  - uid: SGS
+    name: SGS
+    href: SGS.html
+  - name: .
+  - uid: SGS.Class
+    name: Class
+    href: SGS.Class.html
+  - name: .
+  - uid: SGS.Class.Models
+    name: Models
+    href: SGS.Class.Models.html
+  spec.vb:
+  - uid: SGS
+    name: SGS
+    href: SGS.html
+  - name: .
+  - uid: SGS.Class
+    name: Class
+    href: SGS.Class.html
+  - name: .
+  - uid: SGS.Class.Models
+    name: Models
+    href: SGS.Class.Models.html
+- uid: SGS.Class.Interfaces.IRequestService.UpdateAsync*
+  commentId: Overload:SGS.Class.Interfaces.IRequestService.UpdateAsync
+  href: SGS.Class.Interfaces.IRequestService.html#SGS_Class_Interfaces_IRequestService_UpdateAsync_SGS_Class_Models_RequestModel_
+  name: UpdateAsync
+  nameWithType: IRequestService.UpdateAsync
+  fullName: SGS.Class.Interfaces.IRequestService.UpdateAsync
+- uid: SGS.Class.Interfaces.IRequestService.DeleteAsync*
+  commentId: Overload:SGS.Class.Interfaces.IRequestService.DeleteAsync
+  href: SGS.Class.Interfaces.IRequestService.html#SGS_Class_Interfaces_IRequestService_DeleteAsync_System_Int32_
+  name: DeleteAsync
+  nameWithType: IRequestService.DeleteAsync
+  fullName: SGS.Class.Interfaces.IRequestService.DeleteAsync
+- uid: SGS.Class.Interfaces.IRequestService.GetWithCommentsAsync*
+  commentId: Overload:SGS.Class.Interfaces.IRequestService.GetWithCommentsAsync
+  href: SGS.Class.Interfaces.IRequestService.html#SGS_Class_Interfaces_IRequestService_GetWithCommentsAsync_System_Int32_
+  name: GetWithCommentsAsync
+  nameWithType: IRequestService.GetWithCommentsAsync
+  fullName: SGS.Class.Interfaces.IRequestService.GetWithCommentsAsync
+- uid: SGS.Class.Interfaces.IRequestService.GetFilteredAsync*
+  commentId: Overload:SGS.Class.Interfaces.IRequestService.GetFilteredAsync
+  href: SGS.Class.Interfaces.IRequestService.html#SGS_Class_Interfaces_IRequestService_GetFilteredAsync_System_Nullable_SGS_Class_Enums_RequestStatus__System_Nullable_SGS_Class_Enums_RequestPriority__System_Nullable_System_Int32__System_String_
+  name: GetFilteredAsync
+  nameWithType: IRequestService.GetFilteredAsync
+  fullName: SGS.Class.Interfaces.IRequestService.GetFilteredAsync
+- uid: System.Nullable{SGS.Class.Enums.RequestStatus}
+  commentId: T:System.Nullable{SGS.Class.Enums.RequestStatus}
+  parent: System
+  definition: System.Nullable`1
+  href: SGS.Class.Enums.RequestStatus.html
+  name: RequestStatus?
+  nameWithType: RequestStatus?
+  fullName: SGS.Class.Enums.RequestStatus?
+  spec.csharp:
+  - uid: SGS.Class.Enums.RequestStatus
+    name: RequestStatus
+    href: SGS.Class.Enums.RequestStatus.html
+  - name: '?'
+  spec.vb:
+  - uid: SGS.Class.Enums.RequestStatus
+    name: RequestStatus
+    href: SGS.Class.Enums.RequestStatus.html
+  - name: '?'
+- uid: System.Nullable{SGS.Class.Enums.RequestPriority}
+  commentId: T:System.Nullable{SGS.Class.Enums.RequestPriority}
+  parent: System
+  definition: System.Nullable`1
+  href: SGS.Class.Enums.RequestPriority.html
+  name: RequestPriority?
+  nameWithType: RequestPriority?
+  fullName: SGS.Class.Enums.RequestPriority?
+  spec.csharp:
+  - uid: SGS.Class.Enums.RequestPriority
+    name: RequestPriority
+    href: SGS.Class.Enums.RequestPriority.html
+  - name: '?'
+  spec.vb:
+  - uid: SGS.Class.Enums.RequestPriority
+    name: RequestPriority
+    href: SGS.Class.Enums.RequestPriority.html
+  - name: '?'
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

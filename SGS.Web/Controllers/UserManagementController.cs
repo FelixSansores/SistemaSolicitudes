@@ -6,12 +6,25 @@ using SGS.Web.Models;
 
 namespace SGS.Web.Controllers
 {
+    /// <summary>
+    /// Controlador encargado de la administración de usuarios y roles.
+    /// Permite crear usuarios, visualizar usuarios registrados y modificar roles.
+    /// </summary>
     [Authorize(Roles = "Admin")]
     public class UserManagementController : Controller
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
 
+        /// <summary>
+        /// Inicializa una nueva instancia del controlador UserManagementController.
+        /// </summary>
+        /// <param name="userManager">
+        /// Administrador de usuarios del sistema.
+        /// </param>
+        /// <param name="roleManager">
+        /// Administrador de roles del sistema.
+        /// </param>
         public UserManagementController(
             UserManager<ApplicationUser> userManager,
             RoleManager<IdentityRole> roleManager)
@@ -20,6 +33,12 @@ namespace SGS.Web.Controllers
             _roleManager = roleManager;
         }
 
+        /// <summary>
+        /// Muestra la lista de usuarios registrados junto con sus roles.
+        /// </summary>
+        /// <returns>
+        /// Vista con la lista de usuarios y roles asignados.
+        /// </returns>
         public async Task<IActionResult> Index()
         {
             var users = _userManager.Users.ToList();
@@ -29,22 +48,42 @@ namespace SGS.Web.Controllers
             foreach (var user in users)
             {
                 var roles = await _userManager.GetRolesAsync(user);
+
                 userList.Add((user, roles));
             }
 
             return View(userList);
         }
+
+        /// <summary>
+        /// Muestra el formulario para crear un nuevo usuario.
+        /// </summary>
+        /// <returns>
+        /// Vista del formulario de creación de usuario.
+        /// </returns>
         public IActionResult CreateUser()
         {
             ViewBag.Roles = _roleManager.Roles.ToList();
+
             return View();
         }
+
+        /// <summary>
+        /// Crea un nuevo usuario en el sistema y le asigna un rol.
+        /// </summary>
+        /// <param name="model">
+        /// Información del usuario a registrar.
+        /// </param>
+        /// <returns>
+        /// Redirección al listado de usuarios o regreso al formulario en caso de error.
+        /// </returns>
         [HttpPost]
         public async Task<IActionResult> CreateUser(CreateUserViewModel model)
         {
             if (!ModelState.IsValid)
             {
                 ViewBag.Roles = _roleManager.Roles.ToList();
+
                 return View(model);
             }
 
@@ -60,6 +99,7 @@ namespace SGS.Web.Controllers
             if (result.Succeeded)
             {
                 await _userManager.AddToRoleAsync(user, model.Role);
+
                 return RedirectToAction(nameof(Index));
             }
 
@@ -69,8 +109,19 @@ namespace SGS.Web.Controllers
             }
 
             ViewBag.Roles = _roleManager.Roles.ToList();
+
             return View(model);
         }
+
+        /// <summary>
+        /// Muestra el formulario para editar el rol de un usuario.
+        /// </summary>
+        /// <param name="id">
+        /// Identificador del usuario.
+        /// </param>
+        /// <returns>
+        /// Vista para modificar el rol del usuario.
+        /// </returns>
         public async Task<IActionResult> EditRole(string id)
         {
             var user = await _userManager.FindByIdAsync(id);
@@ -95,12 +146,22 @@ namespace SGS.Web.Controllers
             return View(model);
         }
 
+        /// <summary>
+        /// Actualiza el rol asignado a un usuario.
+        /// </summary>
+        /// <param name="model">
+        /// Información del usuario y nuevo rol asignado.
+        /// </param>
+        /// <returns>
+        /// Redirección al listado de usuarios.
+        /// </returns>
         [HttpPost]
         public async Task<IActionResult> EditRole(EditUserRoleViewModel model)
         {
             if (!ModelState.IsValid)
             {
                 ViewBag.Roles = _roleManager.Roles.ToList();
+
                 return View(model);
             }
 

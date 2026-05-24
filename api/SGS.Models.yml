@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: SGS.Models
+  commentId: N:SGS.Models
+  id: SGS.Models
+  children:
+  - SGS.Models.ErrorViewModel
+  langs:
+  - csharp
+  - vb
+  name: SGS.Models
+  nameWithType: SGS.Models
+  fullName: SGS.Models
+  type: Namespace
+  assemblies:
+  - SGS
+references:
+- uid: SGS.Models.ErrorViewModel
+  commentId: T:SGS.Models.ErrorViewModel
+  href: SGS.Models.ErrorViewModel.html
+  name: ErrorViewModel
+  nameWithType: ErrorViewModel
+  fullName: SGS.Models.ErrorViewModel
